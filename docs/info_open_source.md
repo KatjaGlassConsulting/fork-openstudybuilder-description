@@ -75,11 +75,11 @@ The ownership and governance of OpenStudyBuilder is transitioning from a Novo No
 
 ![OpenStudyBuilder Path to Shifting to an Alliance](./img/info_open_source_3.png)
 
-As OpenStudyBuilder is a complex solution already used in production, this transition must be carefully planned and executed. As a first step, we now enable pharmaceutical companies to join as contributors. To support this, we have established a [Contributor License Agreement (CLA)](info_contribution.md#contributor-license-agreement-cla) to provide legal clarity and protect the interests of all parties involved.
+As OpenStudyBuilder is a complex solution already used in production, this transition must be carefully planned and executed. As a first step, we now enable pharmaceutical companies to join as contributors. To support this, we have established a [Contributor License Agreement (CLA)](info_contribution.md#cla-background) to provide legal clarity and protect the interests of all parties involved.
 
 During this initial phase, the details of the alliance model are being defined and shaped in close collaboration with pharma companies interested in becoming alliance members. The goal is to establish a governance framework that ensures transparency, shared ownership, and a clear, structured path for contributions from all members.
 
-If you are interested in **joining the alliance** - helping to own, maintain, and develop the OpenStudyBuilder solution - please contact us via [email](mailto:openstudybuilder@gmail.com){target=_blank}.
+If you are interested in **joining the alliance** - solidifying OpenStudyBuilder, maintain, and develop - please contact us via [email](mailto:openstudybuilder@gmail.com){target=_blank}.
 
 In addition to alliance members, the broader OpenStudyBuilder ecosystem will also include:
 
