@@ -72,3 +72,17 @@ To switch to the community edition, a few updates are required in the docker-com
 Marius Conjeaud has also provided a load test setup for the OpenStudyBuilder. Performance is a critical aspect. There had been tests setup in GitHub [here](https://github.com/mariusconjeaud/openstudybuilder-load-test){target=_blank}. These tests had been looking very promising, there is not much different on whether there are 20 or 200 studies on the database.
 
 Of course the environment has to be considered. When working in a cloud when the data has to be transferred over the internet, the performance will be different. These tests had been performed on a local machine.
+
+### USDM Importer (PoC)
+
+A proof of concept for importing USDM into OpenStudyBuilder has been developed by Phoebe. This solution consists of a Python script and will be available around mid of July as open-source solution. The current status and issues has been presented in one of our OSB Hub sessions for system engineers. You can checkout the recording below.
+
+<iframe
+  title="USDM Importer (PoC)"
+  width=720
+  height=405
+  src="https://www.youtube-nocookie.com/embed/eJ4C1ZFtK-8"
+  frameBorder="0"
+  allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+></iframe>

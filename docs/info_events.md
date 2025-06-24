@@ -4,20 +4,15 @@ Overview
 
 Date | Event | Status 
 -- | -- | --
-15-19 Jun 2025 | DIA Global Annual Meeting 2025 - Washington, DC | Scheduled
 24 June 2025 | CDISC GUF 2025 - Paris, France | Scheduled
 7 July 2025 | Community Meeting (virtual) | Scheduled
-23-24 September 2025 | DDF: Mission Possible (East Hanover, New Jersey & Basel, Switzerland) | Planned
+19 August 2025 | Community Meeting (virtual) | Scheduled
+8 September 2025 | Community Meeting (virtual) | Scheduled
+23-24 September 2025 | DDF: Mission Possible (East Hanover, New Jersey & Basel, Switzerland) | Scheduled
+6 October 2025 | Community Meeting (virtual) | Scheduled
 23 October  2025 | PHUSE SDE Copenhagen, Denmark | Planned
-16-19 November 2025 | PHUSE EU Connect - Hamburg, Germany | Planned
-
-## DIA Global Annual Meeting 2025
-
-(15-19 June 2025, Washington, DC)
-
-Bo Maach-M&oslash;ller, Vice President, Risk-Based Quality Management, will present our automation approach of OpenStudyBuilder in the **Case Studies of Application of AI in Risk-Based Quality Management** session on June 17, 2025, at the DIA Global Annual Meeting in Washington, DC.
-
-You can register for the event [here](https://www.diaglobal.org/Flagship/DIA-2025){target=_blank}.
+16-19 November 2025 | PHUSE EU Connect - Hamburg, Germany | Scheduled
+15-17 March 2026 | ADCM - Berlin, Germany | Planned
 
 ## CDISC GUF 2025
 
@@ -35,11 +30,37 @@ Join us at the OpenStudyBuilder community meeting! Don't miss out on the opportu
 
 You can register for the event [here](https://www.linkedin.com/events/openstudybuildercommunitymeetin7309855564111466496/comments/){target=_blank}.
 
+## Community Meeting (virtual)
+
+(19 August 2025, virtual event)
+
+Join us at the OpenStudyBuilder community meeting! Don't miss out on the opportunity to ask any questions to us! We can demonstrate various functionality and provide insightful answers. We can discuss on a wide range of subjects.
+
+You can register for the event [here](https://www.linkedin.com/events/openstudybuildercommunitymeetin7343203840290172928/comments/){target=_blank}.
+
+## Community Meeting (virtual)
+
+(8 September 2025, virtual event)
+
+Join us at the OpenStudyBuilder community meeting! Don't miss out on the opportunity to ask any questions to us! We can demonstrate various functionality and provide insightful answers. We can discuss on a wide range of subjects.
+
+You can register for the event [here](https://www.linkedin.com/events/openstudybuildercommunitymeetin7343204364292960257/comments/){target=_blank}.
+
 ## DDF: Mission Possible
 
 (23-24 September 2025 - East Hanover, New Jersey & Basel, Switzerland)
 
-Following the success of last year's DDF in Action Day, this year's event, DDF: Mission Possible - Assess, Plan & Implement Protocol Digitalization Solutions, will take place on September 23-24. It will be co-hosted by Novartis in East Hanover, New Jersey, and Roche in Basel, Switzerland. Stay tuned for more details! We likely will join this event and maybe present some of the work of the OpenStudyBuilder.
+Following the success of last year's DDF in Action Day, this year's event, DDF: Mission Possible - Assess, Plan & Implement Protocol Digitalization Solutions, will take place on September 23-24. It will be co-hosted by Novartis in East Hanover, New Jersey, and Roche in Basel, Switzerland. Stay tuned for more details! We join this event and present our latest updates related to DDF on OpenStudyBuilder.
+
+You can register for the event [here](https://www.transceleratebiopharmainc.com/events/ddf-mission-possible-practical-approaches-for-protocol-digitalization/){target=_blank}.
+
+## Community Meeting (virtual)
+
+(6 October 2025, virtual event)
+
+Join us at the OpenStudyBuilder community meeting! Don't miss out on the opportunity to ask any questions to us! We can demonstrate various functionality and provide insightful answers. We can discuss on a wide range of subjects.
+
+You can register for the event [here](https://www.linkedin.com/events/openstudybuildercommunitymeetin7343204856708444160/comments/){target=_blank}.
 
 ## PHUSE SDE Copenhagen
 
