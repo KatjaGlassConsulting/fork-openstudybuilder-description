@@ -4,6 +4,7 @@
 
 Date | Event 
 -- | --
+15-19 Jun 2025 | DIA Global Annual Meeting 2025 - Washington, DC
 2 June 2025 | OSB-Trail-SystemEngineers (virtual)
 2 June 2025 | Community Meeting (virtual)
 16 May 2025 | CDISC 360i Working Group - Geneva, Switzerland
@@ -19,6 +20,12 @@ Date | Event
 10 February 2025 | Community Meeting (virtual) 
 20 January 2025 | OSB-Trail-SystemEngineers Kick-Off (virtual)
 13 January 2025 | Community Meeting (virtual)
+
+### DIA Global Annual Meeting 2025
+
+(15-19 June 2025, Washington, DC)
+
+Bo Maach-M&oslash;ller, Vice President, Risk-Based Quality Management, presented our automation approach of OpenStudyBuilder in the **Case Studies of Application of AI in Risk-Based Quality Management** session on June 17, 2025, at the DIA Global Annual Meeting in Washington, DC.
 
 ### OSB-Trail-SystemEngineers (virtual)
 
