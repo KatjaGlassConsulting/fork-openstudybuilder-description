@@ -13,7 +13,23 @@ ePRO | Marvin ePRO | EvidentIQ has demonstrated the integration of the Oracle Cl
 
 ## Demonstration Videos
 
-This video showcases EDC Integration with Oracle Clinical One.
+### EDC Integration
+
+Discover how Oracle's Automated Study Builder leverages OpenStudyBuilder to streamline EDC setup in Oracle Clinical One. This **comprehensive overview** demonstrates the seamless integration and automation capabilities that transform traditional study building processes (2025-07-03).
+
+<iframe 
+  id="kaltura_player" 
+  src='https://cdnapisec.kaltura.com/p/2171811/embedPlaykitJs/uiconf_id/54927872?iframeembed=true&amp;entry_id=1_i20m4bvk&amp;config%5Bprovider%5D=%7B%22widgetId%22%3A%221_3n7fkv6k%22%7D&amp;config%5Bplayback%5D=%7B%22startTime%22%3A0%7D'  
+  style="width: 720px;height: 400px;border: 0;" 
+  allowfullscreen 
+  webkitallowfullscreen 
+  mozAllowFullScreen 
+  allow="autoplay *; fullscreen *; encrypted-media *" 
+  sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" 
+  title="Automated Study Builder with OSB Introduction">
+</iframe>
+
+Watch this demonstration of Oracle's intelligent study building capabilities, showcasing the powerful integration between OpenStudyBuilder and Oracle Clinical One EDC system. See how clinical data management workflows are revolutionized through intelligent automation (2024-06-14).
 
 <iframe
   title="Intelligent Study Build - Oracle integration with OpenStudyBuilder"
@@ -25,7 +41,9 @@ This video showcases EDC Integration with Oracle Clinical One.
   allowFullScreen
 ></iframe>
 
-This video showcases a Schedule of Activity from a PDF Protocol to be imported into OpenStudyBuilder by Oracle.
+### Protocol
+
+Experience Oracle's innovative proof-of-concept that automatically extracts Schedule of Activity (SoA) data from PDF protocols and seamlessly imports it into OpenStudyBuilder (2024-11-29). 
 
 <iframe
   title="Protocol Metadata to OpenStudyBuilder - an Oracle PoC for SoA import"

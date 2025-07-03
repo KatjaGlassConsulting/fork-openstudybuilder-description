@@ -4,6 +4,7 @@
 
 Date | Event 
 -- | --
+24 June 2025 | CDISC GUF 2025 - Paris, France
 15-19 Jun 2025 | DIA Global Annual Meeting 2025 - Washington, DC
 2 June 2025 | OSB-Trail-SystemEngineers (virtual)
 2 June 2025 | Community Meeting (virtual)
@@ -20,6 +21,14 @@ Date | Event
 10 February 2025 | Community Meeting (virtual) 
 20 January 2025 | OSB-Trail-SystemEngineers Kick-Off (virtual)
 13 January 2025 | Community Meeting (virtual)
+
+### CDISC GUF 2025
+
+(24 June 2025, Paris, France)
+
+We had been at the French CDISC User Forum in Paris. The Digitial Data Flow was presented, where Nicolas demonstrated the OpenStudyBuilder which is implementing the flow.
+
+The presentation slides are available [here](./presentations/2025-06-24-GUF-Digital_Data_Flow.pdf){target=_blank}.
 
 ### DIA Global Annual Meeting 2025
 

@@ -4,7 +4,6 @@ Overview
 
 Date | Event | Status 
 -- | -- | --
-24 June 2025 | CDISC GUF 2025 - Paris, France | Scheduled
 7 July 2025 | Community Meeting (virtual) | Scheduled
 19 August 2025 | Community Meeting (virtual) | Scheduled
 8 September 2025 | Community Meeting (virtual) | Scheduled
@@ -13,14 +12,6 @@ Date | Event | Status
 23 October  2025 | PHUSE SDE Copenhagen, Denmark | Planned
 16-19 November 2025 | PHUSE EU Connect - Hamburg, Germany | Scheduled
 15-17 March 2026 | ADCM - Berlin, Germany | Planned
-
-## CDISC GUF 2025
-
-(24 June 2025, Paris, France)
-
-We will be at the French CDISC User Forum in Paris. Nicolas will talk about the CDISC 360i project and the progress.
-
-You can register for the event [here](https://www.eventbrite.com/e/cdisc-guf-2025-tickets-1370572532339){target=_blank}.
 
 ## Community Meeting (virtual)
 
