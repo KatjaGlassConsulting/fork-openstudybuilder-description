@@ -4,7 +4,6 @@ Overview
 
 Date | Event | Status 
 -- | -- | --
-7 July 2025 | Community Meeting (virtual) | Scheduled
 19 August 2025 | Community Meeting (virtual) | Scheduled
 8 September 2025 | Community Meeting (virtual) | Scheduled
 23-24 September 2025 | DDF: Mission Possible (East Hanover, New Jersey & Basel, Switzerland) | Scheduled
@@ -12,14 +11,6 @@ Date | Event | Status
 23 October  2025 | PHUSE SDE Copenhagen, Denmark | Planned
 16-19 November 2025 | PHUSE EU Connect - Hamburg, Germany | Scheduled
 15-17 March 2026 | ADCM - Berlin, Germany | Planned
-
-## Community Meeting (virtual)
-
-(7 July 2025, virtual event)
-
-Join us at the OpenStudyBuilder community meeting! Don't miss out on the opportunity to ask any questions to us! We can demonstrate various functionality and provide insightful answers. We can discuss on a wide range of subjects.
-
-You can register for the event [here](https://www.linkedin.com/events/openstudybuildercommunitymeetin7309855564111466496/comments/){target=_blank}.
 
 ## Community Meeting (virtual)
 
