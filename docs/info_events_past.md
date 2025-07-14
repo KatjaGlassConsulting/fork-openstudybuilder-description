@@ -4,6 +4,7 @@
 
 Date | Event 
 -- | --
+7 July 2025 | Community Meeting (virtual)
 24 June 2025 | CDISC GUF 2025 - Paris, France
 15-19 Jun 2025 | DIA Global Annual Meeting 2025 - Washington, DC
 2 June 2025 | OSB-Trail-SystemEngineers (virtual)
@@ -21,6 +22,12 @@ Date | Event
 10 February 2025 | Community Meeting (virtual) 
 20 January 2025 | OSB-Trail-SystemEngineers Kick-Off (virtual)
 13 January 2025 | Community Meeting (virtual)
+
+### Community Meeting (virtual)
+
+(7 July 2025, virtual event)
+
+We discussed various aspects of the OpenStudyBuilder in our monthly community meeting.
 
 ### CDISC GUF 2025
 
