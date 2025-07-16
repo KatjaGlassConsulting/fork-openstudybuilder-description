@@ -11,6 +11,7 @@ Date | Event | Status
 23 October  2025 | PHUSE SDE Copenhagen, Denmark | Planned
 16-19 November 2025 | PHUSE EU Connect - Hamburg, Germany | Scheduled
 15-17 March 2026 | ADCM - Berlin, Germany | Planned
+18-22 May 2026 | CDISC + TMF Europe Interchange - Milan, Italy | Planned
 
 ## Community Meeting (virtual)
 
@@ -65,3 +66,11 @@ Registration and additional information available [here](https://www.phuse-event
 We plan to be at the ADCM and will submit a presentation.
 
 Additional event information available [here](https://acdmconference.org/){target=_blank}.
+
+## CDISC + TMF Europe Interchange
+
+(18-22 May 2026 - Milan, Italy) 
+
+We plan to be at the CDISC + TMF Europe Interchange. 
+
+Additional event information available [here](https://www.cdisc.org/events/interchange/2026-cdisc-tmf-european-interchange){target=_blank}.

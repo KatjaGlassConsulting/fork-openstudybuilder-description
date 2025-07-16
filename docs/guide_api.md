@@ -1,6 +1,6 @@
 # Guide for the API {: class="guideH1"}
 
-(updated 2024-07-05 using v0.9.1) 
+(updated 2025-07-15 using v0.16.1) 
 {: class="guideCreated"}
 
 ## Introduction
@@ -253,7 +253,7 @@ Figure 12: ITEMS dataset containing response information for ITEMS
 
 The TransCelerate [Digital Data Flow](https://www.transceleratebiopharmainc.com/assets/digital-data-flow-solutions/){target=_blank} (DDF) initiative is designed to pave the way for a future where study start-up processes are fully automated and dynamic. A key component of achieving this vision is the development of standardized APIs and the new Unified Study Definitions Model (USDM) that facilitate seamless integrations across systems.
 
-**DDF API Endpoint**: The OpenStudyBuilder release 0.9.1 provides a DDF API Endpoint capable of exporting studies in the USDM format. The current exported USDM format is a hybrid of versions 2.7 and 3.0. Efforts are underway to enhance compliance with the USDM 3.0 standard, and we anticipate releasing updates in future versions to address this.
+**DDF API Endpoint**: The OpenStudyBuilder release 0.16.1 provides a DDF API Endpoint and visualization within the user interface. Studies can be exported in the USDM format in version 3.11. We are planning to export in USDM 4.0 by the end of 2025.
 
 **Swagger API Application**: To interact with the API and download studies in the USDM format, users can utilize the Swagger API application. This tool is available for both sandbox and local environments:
 
