@@ -3,7 +3,7 @@
 (created 2025-03-05) 
 {: class="guideCreated"}
 
-The activity concepts, as explained in the corresponding [guide](./guide_activity_concept.md), extend beyond the definition used for the Schedule of Activities. These concepts are crucial for linking the necessary information to enable and trace the flow from defining an activity in the protocol, through a data specification that can then be used in a concrete data collection. This information will be placed in a specific location within the data model(s), e.g. SDTM, and can later be linked to analysis results.
+The activity concepts, as explained in the corresponding [guide](./guide_activity_concept.md), extend beyond the definition used for the Schedule of Activities (SoA). These concepts are crucial for linking the necessary information to enable and trace the flow from defining an activity in the protocol, through a data specification that can then be used in a concrete data collection. This information will be placed in a specific location within the data model(s), e.g. SDTM, and can later be linked to analysis results.
 
 This documentation delves into the details of the current linkage (comparable to Biomedical Concepts). It is related to the CDISC Biomedical Concepts, which are described [here](https://www.cdisc.org/cdisc-biomedical-concepts).
 
@@ -14,8 +14,8 @@ The idea is to create and utilize a connecting flow - define once and use many t
 The core elements are to be linked together:
 
 - Protocol definition
-- CRF utilization
-- EDC specification
+- CRF/EDC specification
+- External data specification
 - SDTM definition
 - ADAM definition
 
