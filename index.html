@@ -65,43 +65,92 @@
       
 
 <header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
+  <nav class="md-header__inner md-grid" aria-label="Header" style="display: flex; align-items: flex-end; position: relative;">
+
+    <!-- Logo -->
     <a href="." title="OpenStudyBuilder" class="md-header__button md-logo" aria-label="OpenStudyBuilder" data-md-component="logo">
       
-  <img src="logoMini.svg" alt="logo">
+  <img src="logoMiniSquare.svg" alt="logo">
 
     </a>
+
+    <!-- Mobile drawer button -->
     <label class="md-header__button md-icon" for="__drawer">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
-    <div class="md-header__title" data-md-component="header-title">
+
+    <!-- Navigation tabs inline, bottom-aligned -->
+    
+      <div class="md-header__tabs" style="display: flex; align-items: flex-end; padding-left: 1rem; padding-bottom: 0.4rem;">
+        <ul class="md-tabs__list" style="display: flex; list-style: none; margin: 0; padding: 0; gap: 0.1rem;">
+          
+            
+              <li class="md-tabs__item">
+                <a href="." class="md-tabs__link md-tabs__link--active">
+                  Home
+                </a>
+              </li>
+            
+          
+            
+              <li class="md-tabs__item">
+                <a href="status/" class="md-tabs__link ">
+                  Info
+                </a>
+              </li>
+            
+          
+            
+              <li class="md-tabs__item">
+                <a href="guide_intro/" class="md-tabs__link ">
+                  Guides
+                </a>
+              </li>
+            
+          
+            
+              <li class="md-tabs__item">
+                <a href="collab_intro/" class="md-tabs__link ">
+                  Alliance
+                </a>
+              </li>
+            
+          
+            
+              <li class="md-tabs__item">
+                <a href="faq/" class="md-tabs__link ">
+                  FAQ
+                </a>
+              </li>
+            
+          
+        </ul>
+      </div>
+    
+
+    <!-- Title region: required for search expansion -->
+    <div class="md-header__title" data-md-component="header-title" style="flex: 1; min-width: 0; visibility: hidden;">
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
-          <span class="md-ellipsis">
-            OpenStudyBuilder
-          </span>
+          <span class="md-ellipsis">OpenStudyBuilder</span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Description
+              Home
             
           </span>
         </div>
       </div>
     </div>
-    
-    
-      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
-    
-    
-    
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+
+    <!-- Search toggle label + search component -->
+    <label class="md-header__button md-icon" for="__search">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+    </label>
+    <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -133,22 +182,8 @@
     </div>
   </div>
 </div>
-    
-    
-      <div class="md-header__source">
-        <a href="https://github.com/NovoNordisk-OpenSource/openstudybuilder-description" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
-  </div>
-  <div class="md-source__repository">
-    OpenStudyBuilder
-  </div>
-</a>
-      </div>
-    
+
   </nav>
-  
 </header>
     
     <div class="md-container" data-md-component="container">
@@ -173,7 +208,7 @@
   
     
   
-  Description
+  Home
 
       </a>
     </li>
@@ -227,6 +262,26 @@
     
     
       <li class="md-tabs__item">
+        <a href="collab_intro/" class="md-tabs__link">
+          
+  
+    
+  
+  Alliance
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
         <a href="faq/" class="md-tabs__link">
           
   
@@ -266,23 +321,11 @@
   <label class="md-nav__title" for="__drawer">
     <a href="." title="OpenStudyBuilder" class="md-nav__button md-logo" aria-label="OpenStudyBuilder" data-md-component="logo">
       
-  <img src="logoMini.svg" alt="logo">
+  <img src="logoMiniSquare.svg" alt="logo">
 
     </a>
     OpenStudyBuilder
   </label>
-  
-    <div class="md-nav__source">
-      <a href="https://github.com/NovoNordisk-OpenSource/openstudybuilder-description" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
-  </div>
-  <div class="md-source__repository">
-    OpenStudyBuilder
-  </div>
-</a>
-    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -306,7 +349,7 @@
           
   
   <span class="md-ellipsis">
-    Description
+    Home
   </span>
   
 
@@ -317,7 +360,7 @@
         
   
   <span class="md-ellipsis">
-    Description
+    Home
   </span>
   
 
@@ -339,117 +382,63 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#see-it-in-action" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      See It in Action
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#openstudybuilder-in-a-nutshell" class="md-nav__link">
+  <a href="#why-openstudybuilder" class="md-nav__link">
     <span class="md-ellipsis">
-      OpenStudyBuilder in a Nutshell
+      Why OpenStudyBuilder?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#problem" class="md-nav__link">
+  <a href="#what-it-enables" class="md-nav__link">
     <span class="md-ellipsis">
-      Problem
+      What It Enables
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#solution" class="md-nav__link">
+  <a href="#who-uses-it" class="md-nav__link">
     <span class="md-ellipsis">
-      Solution
+      Who Uses It
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#open-source-considerations" class="md-nav__link">
+  <a href="#project-milestones" class="md-nav__link">
     <span class="md-ellipsis">
-      Open Source Considerations
+      Project Milestones
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#maintenance" class="md-nav__link">
+  <a href="#get-started" class="md-nav__link">
     <span class="md-ellipsis">
-      Maintenance
+      Get Started
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#contributors" class="md-nav__link">
+  <a href="#contact-project-info" class="md-nav__link">
     <span class="md-ellipsis">
-      Contributors
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#user-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      User Information
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pre-requisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Pre-Requisites
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sponsors" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sponsors
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#goal" class="md-nav__link">
-    <span class="md-ellipsis">
-      Goal
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#communications" class="md-nav__link">
-    <span class="md-ellipsis">
-      Communications
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#background" class="md-nav__link">
-    <span class="md-ellipsis">
-      Background
+      Contact &amp; Project Info
     </span>
   </a>
   
@@ -471,6 +460,8 @@
   
     
     
+      
+        
       
         
       
@@ -541,6 +532,27 @@
   
   <span class="md-ellipsis">
     Status
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="info_project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About the Project
   </span>
   
 
@@ -646,10 +658,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
         
           
-          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -660,8 +672,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_5">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
             <span class="md-nav__icon md-icon"></span>
             Collaboration
           </label>
@@ -975,10 +987,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_12" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_13" >
         
           
-          <label class="md-nav__link" for="__nav_2_12" id="__nav_2_12_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_13" id="__nav_2_13_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -989,8 +1001,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_12_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_12">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_13">
             <span class="md-nav__icon md-icon"></span>
             Demonstrations
           </label>
@@ -1109,10 +1121,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_13" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_14" >
         
           
-          <label class="md-nav__link" for="__nav_2_13" id="__nav_2_13_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_14" id="__nav_2_14_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1123,8 +1135,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_13_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_13">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_14">
             <span class="md-nav__icon md-icon"></span>
             Training
           </label>
@@ -1174,6 +1186,10 @@
   
     
     
+      
+        
+      
+        
       
         
       
@@ -1505,6 +1521,48 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="guide_word_addin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Word Add-In
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="guide_extensions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extensions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1540,7 +1598,7 @@
             
   
   <span class="md-ellipsis">
-    FAQ
+    Alliance
   </span>
   
 
@@ -1549,6 +1607,76 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Alliance
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="collab_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Alliance Vision Established - Collaboration Agreement Signed
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             FAQ
           </label>
@@ -1611,117 +1739,63 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#see-it-in-action" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      See It in Action
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#openstudybuilder-in-a-nutshell" class="md-nav__link">
+  <a href="#why-openstudybuilder" class="md-nav__link">
     <span class="md-ellipsis">
-      OpenStudyBuilder in a Nutshell
+      Why OpenStudyBuilder?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#problem" class="md-nav__link">
+  <a href="#what-it-enables" class="md-nav__link">
     <span class="md-ellipsis">
-      Problem
+      What It Enables
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#solution" class="md-nav__link">
+  <a href="#who-uses-it" class="md-nav__link">
     <span class="md-ellipsis">
-      Solution
+      Who Uses It
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#open-source-considerations" class="md-nav__link">
+  <a href="#project-milestones" class="md-nav__link">
     <span class="md-ellipsis">
-      Open Source Considerations
+      Project Milestones
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#maintenance" class="md-nav__link">
+  <a href="#get-started" class="md-nav__link">
     <span class="md-ellipsis">
-      Maintenance
+      Get Started
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#contributors" class="md-nav__link">
+  <a href="#contact-project-info" class="md-nav__link">
     <span class="md-ellipsis">
-      Contributors
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#user-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      User Information
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pre-requisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Pre-Requisites
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sponsors" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sponsors
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#goal" class="md-nav__link">
-    <span class="md-ellipsis">
-      Goal
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#communications" class="md-nav__link">
-    <span class="md-ellipsis">
-      Communications
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#background" class="md-nav__link">
-    <span class="md-ellipsis">
-      Background
+      Contact &amp; Project Info
     </span>
   </a>
   
@@ -1741,279 +1815,135 @@
                 
                   
 
-  
-  
-
 
 <h1 id="openstudybuilder">OpenStudyBuilder<a class="headerlink" href="#openstudybuilder" title="Permanent link">&para;</a></h1>
 <p><img alt="OpenStudyBuilder Tool Logo" src="img/studyBuilderLogo.png" /></p>
-<p>The OpenStudyBuilder is an open-source project for clinical study specifications. This tool is a new approach for working with studies that once fully implemented will drive end-to-end consistency and more efficient processes - all the way from protocol development and CRF design - to creation of datasets, analysis, reporting, submission to health authorities and public disclosure of study information.</p>
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Project Type</td>
-<td><a href="https://cosa.cdisc.org/" target="_blank">COSA project (CDISC Open Source Alliance)</a></td>
-</tr>
-<tr>
-<td>Owner</td>
-<td>Novo Nordisk A/S</td>
-</tr>
-<tr>
-<td>Contact</td>
-<td><a href="mailto:OpenStudyBuilder@gmail.com">OpenStudyBuilder@gmail.com</a><br>Regular Open Sessions planned<br>Slack: <a href="https://join.slack.com/t/openstudybuilder/shared_invite/zt-19mtauzic-Jvrhtmy7hGstgyiIvB1Wsw" target="_blank">Join OpenStudyBuilder</a></td>
-</tr>
-<tr>
-<td>Newsletter</td>
-<td><a href="https://www.linkedin.com/newsletters/openstudybuilder-6990328054849916928/" target="_blank">LinkedIn Newsletter</a></td>
-</tr>
-<tr>
-<td>First release</td>
-<td>Q3-2022</td>
-</tr>
-<tr>
-<td>Repository</td>
-<td><a href="https://github.com/NovoNordisk-OpenSource/openstudybuilder-solution" target="_blank">https://github.com/NovoNordisk-OpenSource/openstudybuilder-solution</a></td>
-</tr>
-<tr>
-<td>Programming Languages</td>
-<td>Python, Cypher (Neo4j), JavaScript (Vue.js)</td>
-</tr>
-<tr>
-<td>Licenses</td>
-<td>Components with MIT and GPLv3, documentation CC-BY-4.0</td>
-</tr>
-<tr>
-<td>CDISC Standards</td>
-<td>CDISC CT, CDASH, SDTM, ADaM with ODM-XML and Define-XML</td>
-</tr>
-<tr>
-<td>Project Status</td>
-<td>First productive usage in Novo Nordisk planned for Q2 2022</td>
-</tr>
-<tr>
-<td>Users</td>
-<td>Standards Governance, Study Designer, Standards Management, Trial Management, Medical Writing, Data Management, Biostatistics, Medical &amp; Science, Clinical Pharmacology</td>
-</tr>
-</tbody>
-</table>
-<h2 id="openstudybuilder-in-a-nutshell">OpenStudyBuilder in a Nutshell<a class="headerlink" href="#openstudybuilder-in-a-nutshell" title="Permanent link">&para;</a></h2>
+<p>OpenStudyBuilder is the open-source solution for the industry establishing a <strong>single, standardized source of truth for digital study design specifications</strong> unlocking data and AI-driven operational and scientific excellence across clinical development.</p>
+<p><a class="md-button md-button--primary" href="info_environment/#public-sandbox-access">Try the Sandbox</a>
+<a class="md-button" href="status/">Get Started</a></p>
+<hr />
+<h2 id="see-it-in-action">See It in Action<a class="headerlink" href="#see-it-in-action" title="Permanent link">&para;</a></h2>
 <p><iframe
-  title="Intelligent Study Build - Oracle integration with OpenStudyBuilder"
+  title="OpenStudyBuilder - Protocol review made easy"
   width=720
   height=400
-  src="https://www.youtube-nocookie.com/embed/X0UQrOGfEOc"
+  src="https://www.youtube.com/embed/ywM3f_D9Zx0"
   frameBorder="0"
   allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
   allowFullScreen
 ></iframe>
 </p>
-<h2 id="problem">Problem<a class="headerlink" href="#problem" title="Permanent link">&para;</a></h2>
-<p>The current solutions for managing clinical data standards and study design specifications are often characterised by:</p>
+<hr />
+<h2 id="why-openstudybuilder">Why OpenStudyBuilder?<a class="headerlink" href="#why-openstudybuilder" title="Permanent link">&para;</a></h2>
+<p>Clinical study processes today are characterized by:</p>
 <ul>
-<li>Resource demanding double work</li>
-<li>Parallel work done in silos resulting in discrepancies and need for rework </li>
-<li>Many handovers between different professional groups introducing lag-time</li>
-<li>Many IT systems and tools</li>
-<li>Error-prone and resource-intensive manual steps </li>
-<li>Expensive system maintenance and integration</li>
+<li><strong>Silos and rework</strong> - parallel work across disconnected teams leads to discrepancies and delays</li>
+<li><strong>Manual, error-prone handovers</strong> - between professional groups, IT systems, and tools</li>
+<li><strong>No end-to-end consistency</strong> - terminology used in protocol, CRF, and datasets diverges, blocking automation</li>
 </ul>
-<p>Additionally, the current CDISC standards have gaps in standards metadata, limiting automation opportunities. The inherent flexibility provided by the standards supports a broad range of implementations, but that flexibility also allows for inconsistencies that makes automation scaling difficult. Furthermore, the lack of end-to-end awareness and use of the CDISC standards (e.g. for writing documents such as the protocol and clinical study reports) prohibits efficient end-to-end automation and introduces discrepancies between different presentations of the study specifications, such as e.g. discrepancies in terminology used between protocol, CRF and SDTM datasets.       </p>
-<p>The vision is to solve this problem by implementing standards as linked metadata with a conceptual foundation providing the additional semantics needed to support metadata driven-automation across the end-to-end clinical research data lifecycle – as illustrated by the CDISC 360 PoC project (see more at <a href="https://www.cdisc.org/cdisc-360" target="_blank">https://www.cdisc.org/cdisc-360</a>).</p>
-<h2 id="solution">Solution<a class="headerlink" href="#solution" title="Permanent link">&para;</a></h2>
-<p>The OpenStudyBuilder is a new approach to working with studies that once fully implemented will drive end-to-end consistency and more efficient processes - all the way from protocol development and CRF design - to creation of datasets, analysis, reporting, submission to health authorities and public disclosure of study information.</p>
-<p>The OpenStudyBuilder contains:</p>
+<p>OpenStudyBuilder solves this by implementing study specifications as <strong>linked, standards-driven metadata</strong> - one source of truth that feeds every downstream system.</p>
+<hr />
+<h2 id="what-it-enables">What It Enables<a class="headerlink" href="#what-it-enables" title="Permanent link">&para;</a></h2>
+<p><strong>End-to-end process support</strong><br />
+From protocol authoring and CRF design through clinical system setup to submission data - all driven by shared standards, templates, and study design metadata.</p>
+<p><strong>One source of truth</strong><br />
+Central storage of study design data and standards for multiple downstream usages, with versioning and full audit trail.</p>
+<p><strong>Automation and efficiency</strong><br />
+Reduces manual steps, minimises errors and discrepancies, and supports automated downstream processes - resulting in faster reporting and submissions.</p>
+<p><strong>Modern, open architecture</strong><br />
+Graph database, transparent API-based design, and a modular implementation that supports partial adoption and easy integration with existing systems.</p>
+<p><strong>Community-driven innovation</strong><br />
+Project released under the <a href="https://cosa.cdisc.org/" target="_blank">CDISC Open Source Alliance (COSA)</a> built on CDISC 360i and Digital Data Flow (DDF) principles - open to contributions from the entire industry.</p>
+<hr />
+<h2 id="who-uses-it">Who Uses It<a class="headerlink" href="#who-uses-it" title="Permanent link">&para;</a></h2>
+<p>OpenStudyBuilder supports cross-functional study teams across the full clinical development lifecycle:</p>
+<p>Standards Governance &#149; Study Designer &#149; Standards Management &#149; Trial Management &#149; Medical Writing &#149; Data Management &#149; Biostatistics &#149; Medical &amp; Science &#149; Clinical Pharmacology</p>
+<hr />
+<h2 id="project-milestones">Project Milestones<a class="headerlink" href="#project-milestones" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Standards and templates used for study specification</li>
-<li>Individual versioning of standard elements in the library </li>
-<li>Real-time team collaboration around study design by study team</li>
-<li>Central storage of study design data for multiple down-stream usages (‘one source of truth’)</li>
-<li>Versioning and full audit trail of study definitions</li>
+<li><strong>Q3 2022</strong> - First open-source release</li>
+<li><strong>Q4 2023</strong> - First business go-live at Novo Nordisk; all Phase 2/3 studies using OpenStudyBuilder for protocol authoring</li>
+<li><strong>Oct 2025</strong> - Schedule of Activities live for all interventional studies (Phase 1–4) at Novo Nordisk</li>
+<li><strong>Dec 2025</strong> - First external code contribution from a pharmaceutical company (Boehringer Ingelheim)</li>
+<li><strong>May 2026</strong> - Signed collaboration agreement between Novo Nordisk, Bayer, and Boehringer Ingelheim - three major pharma companies jointly committing to the development and maintenance of OpenStudyBuilder</li>
+<li><strong>2026</strong> - Industry adoption year: EDC automation, broader community rollout</li>
 </ul>
-<p>The OpenStudyBuilder will cover the following study specification elements:</p>
-<ul>
-<li>Study purpose (objectives, endpoints)</li>
-<li>Population (disease area, indication, sex, age, etc)</li>
-<li>Selection criteria (eligibility, randomisation, dosing, treatment discontinuation, etc)</li>
-<li>Study type (interventional, observational, etc)</li>
-<li>Study design (randomisation, blinding, arms, etc)</li>
-<li>Interventions (drug, dose, route, devise, lifestyle interventions, etc.)</li>
-<li>Visit schedule (naming, timing, type, windows)</li>
-<li>Activities and assessments (what, how, when)</li>
-<li>All the terminology and syntax standards to follow</li>
-<li>Complete audit trail of what has changed over time</li>
-</ul>
-<p>The OpenStudyBuilder consists of:</p>
-<ul>
-<li>The OpenStudyBuilder app (web-based user interface)</li>
-<li>The new clinical Metadata Repository (central repository for all study specification data)</li>
-<li>The API layer (allowing interoperability with other systems)</li>
-<li>The integrations to source and target systems</li>
-</ul>
-<p>The conceptual design for the OpenStudyBuilder system with connected system integrations is illustrated in the following diagram.</p>
-<p><img alt="Diagram of conceptual design" src="img/studyBuilderDesign.png" /></p>
-<ul>
-<li><strong>OpenStudyBuilder</strong> online documentation for the OpenStudyBuilder solution including introduction, user guides, system documentation and data model documentation.</li>
-<li><strong>OpenStudyBuilder App</strong> Vuetify based Web application with the UI for creating the study definition specification.</li>
-<li><strong>Protocol Metadata Word add-in</strong> holding the Protocol Template and import features of the structured study specification metadata that relates to the protocol content (expecting a blater).</li>
-<li><strong>Up-stream integrations</strong> to clinical systems like CTMS, Trial Supplies, EDC, Study Registries, etc. supporting also DDF API.</li>
-<li><strong>Down-stream integrations</strong> to clinical data systems for SDTM, ADaM, analysis and reporting, supporting also DDF API.</li>
-<li><strong>Explore data</strong> Using a biomedical concept used by a FAIR based study search and explore tool utilising the OpenStudyBuilder metadata with reference to systems holding study data.</li>
-<li><strong>OpenStudyBuilder API</strong> and Standards Library API Python based web application based on FAST API framework supporting all CRUD actions to the database, access control, versioning, workflows and data integrity rules.</li>
-<li><strong>DDF API Adaptor</strong> providing a Digital Data Flow compliant API connectivity enabling the Clinical MDR solution as a compliant Study Definition Repository (SDR) solution supporting the Unified Study Definition Model (USDM) standard data model as well.</li>
-<li><strong>Integration Service</strong> Integration to UNIX based Statistical Computing Environment (SCE) with SAS and R.</li>
-<li><strong>Clinical MDR</strong> Neo4j linked graph database and data model supporting the library standards, study definitions including fine granularity of versioning, audit trail, workflows and access control.</li>
-<li><strong>Standards Management</strong> for integrated into the OpenStudyBuilder App as the Library module managing concepts, dictionaries, code lists, syntax templates, project and TA standards.</li>
-</ul>
-<h2 id="open-source-considerations">Open Source Considerations<a class="headerlink" href="#open-source-considerations" title="Permanent link">&para;</a></h2>
-<p>This challenge cannot be solved by CDISC, any vendors or any pharma companies alone. The purpose of this project as an open-source project is therefore to engage interested stakeholders in the CDISC community to collaborate in funding, implementing, and applying this solution approach in our clinical development activities. We thereby hope the learnings and best practices can be shared in the community and be used in the coming development of the standard concepts, data models and API specifications.</p>
-<p>The OpenStudyBuilder system component architecture including software components and packages are illustrated in the following diagram.</p>
-<p><img alt="Diagram of component design" src="img/studyBuilderComponents.png" /></p>
-<p>The following licenses are planned to be used. </p>
-<p>Core components will be shared under MIT and applications will be shared under the GPLv3 copyleft license. The Clinical MDR and OpenStudyBuilder system consist of the following components expected to be released under the mentioned open-source licenses.</p>
+<hr />
+<h2 id="get-started">Get Started<a class="headerlink" href="#get-started" title="Permanent link">&para;</a></h2>
+<div style="display: flex; gap: 16px; flex-wrap: wrap; margin: 16px 0;">
+
+  <div style="flex: 1; min-width: 180px; padding: 16px; border: 1px solid #e0e0e0; border-radius: 8px;">
+    <strong>Explore a Demo</strong><br/><br/>
+    Try the live sandbox or watch demonstration videos without installing anything.<br/><br/>
+    <a href="./info_environment/#public-sandbox-access">Sandbox access</a> &#149; <a href="./info_demo_videos">Videos</a>
+  </div>
+
+  <div style="flex: 1; min-width: 180px; padding: 16px; border: 1px solid #e0e0e0; border-radius: 8px;">
+    <strong>Read the Guides</strong><br/><br/>
+    Step-by-step user guides covering library standards, study setup, CRF management and more.<br/><br/>
+    <a href="./guide_intro">User Guides</a> &#149; <a href="https://sandbox.openstudybuilder.com/doc/" target="_blank">Technical Docs</a>
+  </div>
+
+  <div style="flex: 1; min-width: 180px; padding: 16px; border: 1px solid #e0e0e0; border-radius: 8px;">
+    <strong>Join the Community</strong><br/><br/>
+    Connect with other users and contributors, attend events, and follow the newsletter.<br/><br/>
+    <a href="./info_events">Events</a> &#149; <a href="./info_newsletter">Newsletter</a> &#149; <a href="./info_osb_hub">Community</a>
+  </div>
+
+</div>
+
+<hr />
+<h2 id="contact-project-info">Contact &amp; Project Info<a class="headerlink" href="#contact-project-info" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>System Component (License)</th>
-<th>Technology</th>
-<th>Description</th>
+<th></th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>OpenStudyBuilder App (GPLv3)</td>
-<td>Vue.js using Vuetify library</td>
-<td>JavaScript based web application with the UI for creating the study definition specification, maintaining library standards. The OpenStudyBuilder app holds two main modules: Library and Studies</td>
+<td><strong>Project type</strong></td>
+<td><a href="https://cosa.cdisc.org/" target="_blank">COSA project (CDISC Open Source Alliance)</a></td>
 </tr>
 <tr>
-<td>OpenStudyBuilder Documentation Portal (CC-BY-4.0 and MIT)</td>
-<td>Vuepress</td>
-<td>Markdown based documentation portal with OpenStudyBuilder Introduction, User Guides, System Documentation, Data Models and more.</td>
+<td><strong>Owner</strong></td>
+<td>Novo Nordisk A/S</td>
 </tr>
 <tr>
-<td>Clinical MDR API (GPLv3)</td>
-<td>Python using FAST API framework</td>
-<td>Python based web application based on FAST API framework supporting all CRUD actions to the database, access control, versioning, workflows and data integrity rules.</td>
+<td><strong>Repository</strong></td>
+<td><a href="https://github.com/NovoNordisk-OpenSource/openstudybuilder-solution" target="_blank">github.com/NovoNordisk-OpenSource/openstudybuilder-solution</a></td>
 </tr>
 <tr>
-<td>Clinical MDR API Specification (MIT)</td>
-<td>OpenAPI Specification / Swagger</td>
-<td>Off-line documentation of the API.</td>
+<td><strong>Email</strong></td>
+<td><a href="mailto:OpenStudyBuilder@gmail.com">OpenStudyBuilder@gmail.com</a></td>
 </tr>
 <tr>
-<td>Clinical MDR (MIT)</td>
-<td>Cypher</td>
-<td>Clinical MDR logical and physical data models, database constraint definitions, procedures and functions. Needs to run on a Neo4j database.</td>
+<td><strong>Community meetings</strong></td>
+<td><a href="info_events/">Events</a></td>
 </tr>
 <tr>
-<td>Graph Database (Neo4j free edition or licenced enterprise edition)</td>
-<td>Neo4j native graph database (not part of repository, usable through neo4j.com)</td>
-<td>A labelled property graph database engine, for more info see <a href="https://neo4j.com/docs/getting-started/current/graphdb-concepts/">Graph database concepts - Getting Started (neo4j.com)</a> and <a href="https://neo4j.com/developer/">Neo4j Graph Platform - Developer Guides</a></td>
+<td><strong>Slack</strong></td>
+<td><a href="https://join.slack.com/t/openstudybuilder/shared_invite/zt-19mtauzic-Jvrhtmy7hGstgyiIvB1Wsw" target="_blank">Join OpenStudyBuilder</a></td>
 </tr>
 <tr>
-<td>Standards Import (GPLv3)</td>
-<td>Python and Cypher</td>
-<td>Import programs connecting to CDISC Library, downloading files to cloud storage, reading these into staging database, and then inserting data into Clinical MDR database.</td>
+<td><strong>Newsletter</strong></td>
+<td><a href="https://www.linkedin.com/newsletters/openstudybuilder-6990328054849916928/" target="_blank">LinkedIn Newsletter</a></td>
 </tr>
 <tr>
-<td>Data Import (MIT)</td>
-<td>Python and Cypher</td>
-<td>Importing other data like sponsor specific data standards as well as sample and test data.</td>
+<td><strong>Licenses</strong></td>
+<td>MIT &#149; GPLv3 &#149; CC-BY-4.0</td>
+</tr>
+<tr>
+<td><strong>CDISC Standards</strong></td>
+<td>CDISC CT &#149; CDASH &#149; SDTM &#149; ADaM &#149; ODM-XML &#149; Define-XML</td>
 </tr>
 </tbody>
 </table>
-<h2 id="maintenance">Maintenance<a class="headerlink" href="#maintenance" title="Permanent link">&para;</a></h2>
-<p>Currently Novo Nordisk is responsible for project governance and system maintenance. As a mid-term solution a community should be built up, which can take over the maintenance to support various companies best.</p>
-<h2 id="contributors">Contributors<a class="headerlink" href="#contributors" title="Permanent link">&para;</a></h2>
-<p>Contributions are much appreciated. Please check out the contributor level agreement and the community homepage to figure out how to contribute best. For example, the following contributions are very welcome:</p>
-<ul>
-<li>Join discussion and user group</li>
-<li>Feature and bug reporting </li>
-<li>Documentation / Training / Explanation contributions</li>
-<li>Coding contribution directly or through vendors</li>
-<li>Additional components as standalone components or under this project’s umbrella</li>
-</ul>
-<p>The following companies are currently contributing to the system development:</p>
-<table>
-<thead>
-<tr>
-<th>Company</th>
-<th>Website and contact</th>
-<th>Description of contribution</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Novo Nordisk</td>
-<td>www.novonordisk.com <br> Henrik Lynge, Vice President, BDP MARS, GD, DRD <br> hlyl@novonordisk.com</td>
-<td>Funding and license owner for the Clinical MDR and OpenStudyBuilder open-source project. Project leadership, product owner, system design, system development, cloud architecture, system documentation, system validation, …</td>
-</tr>
-<tr>
-<td>Neo4j</td>
-<td>www.neo4j.com <br> Jan Aertsen - Professional Services EMEA <br> openstudybuilder@neotechnology.com</td>
-<td>Main solution vendor supporting data modelling, system design, system development, cloud architecture and cloud manage services.<br/><br/><ul><li>Documentation Portal</li><li>API Specification </li><li>API service </li><li>Data Model </li><li>Database</li></ul></td>
-</tr>
-<tr>
-<td>Katja Glass Consulting</td>
-<td>www.glacon.eu <br/>Katja Gla&szlig;<br/>Consultant<br/>info@glacon.eu</td>
-<td>Community Manager. Open-source project consulting, communication and support.</td>
-</tr>
-<tr>
-<td>EvidentIQ</td>
-<td>www.evidentiq.com <br> J.David Renzelmann, Executive Director Business Development <br> david.renzelmann@evidentiq.com</td>
-<td>Past Contribution<br/>Main solution vendor supporting system design, system documentation, system validation, open-source project support and services.</td>
-</tr>
-<tr>
-<td>Microsoft</td>
-<td>www.microsoft.com <br> Tianna M. Umann, Business Growth &amp; Innovation Architect <br> Tianna.Umann@microsoft.com</td>
-<td>Past Contribution<br/>Technical and architectural design review.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="user-information">User Information<a class="headerlink" href="#user-information" title="Permanent link">&para;</a></h2>
-<p>Depending on the usage, different knowledge would be recommended. As a study designer you can set up a study very intuitively using the OpenStudyBuilder and the available online help.</p>
-<p>As a standards developer maintaining the concept-based data standards within the library areas more comprehensive training and use of online documentation is needed. </p>
-<p>When additional custom standards and models should be included into the biomedical concept model, linked data knowledge as well as knowledge about the Neo4j database would be recommended. This will be related to system maintenance. </p>
-<h2 id="pre-requisites">Pre-Requisites<a class="headerlink" href="#pre-requisites" title="Permanent link">&para;</a></h2>
-<p>The current implementation required CDISC library access to access CDISC standards, a Neo4j database license for the database and a set of servers where the web applications and API services can run.</p>
-<p>Access to the open-source code will be via a public accessible GitHub repository. A link to this repository will be provided when available.</p>
-<p>Novo Nordisk is using a full containerised DevOps pipeline running in Azure where everything is hosted in the cloud. </p>
-<p>Access to a shared or dedicated cloud-based evaluation environment can be provided by Neo4j free of charge. More information on various options are shared <a href="info_environment/">here</a>.</p>
-<p>It is also possible to run the full system on a local desktop environment or on an individual cloud subscription on any of the main cloud providers. Instructions on how to set up the system on a local desktop can be found in the readme files of the individual components.</p>
-<p>The different components can also be used independently due to the modular implementation and API usages.</p>
-<h2 id="sponsors">Sponsors<a class="headerlink" href="#sponsors" title="Permanent link">&para;</a></h2>
-<p>The project is currently funded by Novo Nordisk. Additional pharma companies that would be interested in funding additional development, modules or connected tools are very appreciated and welcome.</p>
-<h2 id="goal">Goal<a class="headerlink" href="#goal" title="Permanent link">&para;</a></h2>
-<p>The vision and business benefit of the solution is to support digitalisation in clinical development by:</p>
-<ul>
-<li>Enabling seamless interoperability and cross-functional end-to-end study-team collaboration.</li>
-<li>Centrally storing study design data for multiple down-stream usages (‘one source of truth’).</li>
-<li>Saving time and resources and minimising errors and discrepancies by enabling an end-to-end process based on shared standards, templates and study design data with the community to facilitate faster reporting and submissions.</li>
-<li>Enabling insights via enhanced search and explore.</li>
-<li>Implementing a sustainable model for maintenance and integrations.</li>
-<li>Basing the solution on industry standards with the objective to drive this as an open-source collaboration.</li>
-</ul>
-<p><strong>End-to-end process support</strong></p>
-<p>The end-to-end process is supported by the use of new concept-based data standards from protocol set-up, study specification, clinical systems setup, and preparation of submission data deliverable. The OpenStudyBuilder application supports study specification tasks for Trial Management, Clinical Reporting, Data Management and Biostatistics.</p>
-<p><strong>Benefits</strong></p>
-<p>The benefits are to manage master data and definitions for CDISC Data Standards, other industry standards and internal standards. Furthermore, the clinical system set-up and end-to-end data integrations with higher degree of automation from study outline to submission are supported.</p>
-<p><strong>Innovation</strong></p>
-<p>A modern graph database is used to link between related elements within and across standards (code lists) and studies. A transparent API-based architecture ensures simple system integration and allows for additional expansion via dedicated applications. A simple and intuitive user interface is used which is based on a state-of-the-art modern application framework.</p>
-<p><strong>Modular implementation</strong></p>
-<p>The tool and interface design specifically supports partial components. A full-stack operational flow is not required. It is possible to use only parts of the tool set. The design allows for system replacements, for example when a component should be replaced with another technology considering the API interfaces. According to the design, additional tools and functionalities can be implemented using and providing APIs.</p>
-<h2 id="communications">Communications<a class="headerlink" href="#communications" title="Permanent link">&para;</a></h2>
-<p>A community homepage is set up for up-to-date information about the project. The project is presented at various conferences. Additional presentations, webinars, discussion, workshops and training sessions are planned. Please also join the Slack channel for discussions or use the <a href="mailto:OpenStudyBuilder@gmail.com">OpenStudyBuilder@gmail.com</a> community mail.</p>
-<h2 id="background">Background<a class="headerlink" href="#background" title="Permanent link">&para;</a></h2>
-<p>This solution is based on a legacy bespoke MDR system at Novo Nordisk, and one of the goals for Novo Nordisk is to ensure that our current sponsor-defined data standards and portfolio of study definitions can be migrated into the new MDR and OpenStudyBuilder system.</p>
-<p>The new solution design for the OpenStudyBuilder is deeply inspired by the CDISC 360 PoC project as well as the TransCelerate BioPharma Digital Data Flow (DDF) project. The OpenStudyBuilder aims to become a DDF reference implementation on top of many other features. Furthermore, additional community involvement is appreciated. Additional information how the OpenStudyBuilder can be seen in the DDF context is available <a href="info_ddf/">here</a>.</p>
-<p>Currently the OpenStudyBuilder solution is only sponsored by Novo Nordisk. Novo Nordisk seeks additional stakeholders that would be interested in co-sponsoring this open-source project.</p>
-<p>The first minimal viable product release for PoC was started in Q3 2022. The initial business go-live for the minimal viable product is Q4 2023.</p>
+<hr />
+<p><a href="info_project/">About the Project</a> - system architecture, components, contributors, and background<br />
+<a href="info_environment/">Environments</a> - deployment options and setup<br />
+<a href="info_open_source/">Collaboration</a> - open-source strategy, contribution, and licensing</p>
 
 
 
@@ -2041,28 +1971,43 @@
         
       </main>
       
-        <footer class="md-footer">
-  
+
+
+<!-- Footer -->
+<footer class="md-footer">
+  <!-- Further information -->
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
-  
-    <div class="md-copyright__highlight">
-      Copyright &copy; 2025 OpenStudyBuilder Project
-    </div>
-  
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
-  
-</div>
+
+      <!-- Copyright and theme information -->
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2026 OpenStudyBuilder Project
+          </div>
+        
+        
+
+        <!-- Custom footer links -->
+        <p style="margin-top: 0.3rem; color: var(--md-footer-fg-color--lighter);">
+          <a href="https://github.com/NovoNordisk-OpenSource/openstudybuilder-description" target="_blank" rel="noopener" style="color: var(--md-footer-fg-color--lighter); text-decoration: none;">
+            Site Source
+          </a>&nbsp;|&nbsp;
+          <a href="privacy_policy/" style="color: var(--md-footer-fg-color--lighter); text-decoration: none;">
+            Privacy Policy
+          </a>&nbsp;|&nbsp;
+          <a href="imprint/" style="color: var(--md-footer-fg-color--lighter); text-decoration: none;">
+            Imprint
+          </a>
+        </p>
+      </div>
+
+      <!-- Social links -->
       
     </div>
   </div>
 </footer>
-      
+
     </div>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>

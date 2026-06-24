@@ -65,22 +65,75 @@
       
 
 <header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
+  <nav class="md-header__inner md-grid" aria-label="Header" style="display: flex; align-items: flex-end; position: relative;">
+
+    <!-- Logo -->
     <a href=".." title="OpenStudyBuilder" class="md-header__button md-logo" aria-label="OpenStudyBuilder" data-md-component="logo">
       
-  <img src="../logoMini.svg" alt="logo">
+  <img src="../logoMiniSquare.svg" alt="logo">
 
     </a>
+
+    <!-- Mobile drawer button -->
     <label class="md-header__button md-icon" for="__drawer">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
-    <div class="md-header__title" data-md-component="header-title">
+
+    <!-- Navigation tabs inline, bottom-aligned -->
+    
+      <div class="md-header__tabs" style="display: flex; align-items: flex-end; padding-left: 1rem; padding-bottom: 0.4rem;">
+        <ul class="md-tabs__list" style="display: flex; list-style: none; margin: 0; padding: 0; gap: 0.1rem;">
+          
+            
+              <li class="md-tabs__item">
+                <a href=".." class="md-tabs__link ">
+                  Home
+                </a>
+              </li>
+            
+          
+            
+              <li class="md-tabs__item">
+                <a href="../status/" class="md-tabs__link md-tabs__link--active">
+                  Info
+                </a>
+              </li>
+            
+          
+            
+              <li class="md-tabs__item">
+                <a href="../guide_intro/" class="md-tabs__link ">
+                  Guides
+                </a>
+              </li>
+            
+          
+            
+              <li class="md-tabs__item">
+                <a href="../collab_intro/" class="md-tabs__link ">
+                  Alliance
+                </a>
+              </li>
+            
+          
+            
+              <li class="md-tabs__item">
+                <a href="../faq/" class="md-tabs__link ">
+                  FAQ
+                </a>
+              </li>
+            
+          
+        </ul>
+      </div>
+    
+
+    <!-- Title region: required for search expansion -->
+    <div class="md-header__title" data-md-component="header-title" style="flex: 1; min-width: 0; visibility: hidden;">
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
-          <span class="md-ellipsis">
-            OpenStudyBuilder
-          </span>
+          <span class="md-ellipsis">OpenStudyBuilder</span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
@@ -91,17 +144,13 @@
         </div>
       </div>
     </div>
-    
-    
-      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
-    
-    
-    
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+
+    <!-- Search toggle label + search component -->
+    <label class="md-header__button md-icon" for="__search">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+    </label>
+    <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -133,22 +182,8 @@
     </div>
   </div>
 </div>
-    
-    
-      <div class="md-header__source">
-        <a href="https://github.com/NovoNordisk-OpenSource/openstudybuilder-description" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
-  </div>
-  <div class="md-source__repository">
-    OpenStudyBuilder
-  </div>
-</a>
-      </div>
-    
+
   </nav>
-  
 </header>
     
     <div class="md-container" data-md-component="container">
@@ -171,7 +206,7 @@
   
     
   
-  Description
+  Home
 
       </a>
     </li>
@@ -227,6 +262,26 @@
     
     
       <li class="md-tabs__item">
+        <a href="../collab_intro/" class="md-tabs__link">
+          
+  
+    
+  
+  Alliance
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
         <a href="../faq/" class="md-tabs__link">
           
   
@@ -264,23 +319,11 @@
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="OpenStudyBuilder" class="md-nav__button md-logo" aria-label="OpenStudyBuilder" data-md-component="logo">
       
-  <img src="../logoMini.svg" alt="logo">
+  <img src="../logoMiniSquare.svg" alt="logo">
 
     </a>
     OpenStudyBuilder
   </label>
-  
-    <div class="md-nav__source">
-      <a href="https://github.com/NovoNordisk-OpenSource/openstudybuilder-description" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
-  </div>
-  <div class="md-source__repository">
-    OpenStudyBuilder
-  </div>
-</a>
-    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -295,7 +338,7 @@
         
   
   <span class="md-ellipsis">
-    Description
+    Home
   </span>
   
 
@@ -314,6 +357,8 @@
   
     
     
+      
+        
       
         
       
@@ -387,6 +432,27 @@
   
   <span class="md-ellipsis">
     Status
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../info_project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About the Project
   </span>
   
 
@@ -492,10 +558,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
         
           
-          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -506,8 +572,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_5">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
             <span class="md-nav__icon md-icon"></span>
             Collaboration
           </label>
@@ -721,9 +787,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pre-requisites" class="md-nav__link">
+  <a href="#public-sandbox-access" class="md-nav__link">
     <span class="md-ellipsis">
-      Pre-Requisites
+      Public Sandbox Access
     </span>
   </a>
   
@@ -739,36 +805,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#neo4j-licenses" class="md-nav__link">
+  <a href="#pre-requisites" class="md-nav__link">
     <span class="md-ellipsis">
-      Neo4j Licenses
+      Pre-Requisites
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#neo4j-evaluation-environments" class="md-nav__link">
+  <a href="#neo4j-licenses-and-setup" class="md-nav__link">
     <span class="md-ellipsis">
-      Neo4j Evaluation Environments
+      Neo4j Licenses and Setup
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#neo4j-contact-details" class="md-nav__link">
+  <a href="#htp42-evaluation-environments" class="md-nav__link">
     <span class="md-ellipsis">
-      Neo4j Contact details
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#public-sandbox-access" class="md-nav__link">
-    <span class="md-ellipsis">
-      Public Sandbox Access
+      HTP42 Evaluation Environments
     </span>
   </a>
   
@@ -915,10 +972,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_12" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_13" >
         
           
-          <label class="md-nav__link" for="__nav_2_12" id="__nav_2_12_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_13" id="__nav_2_13_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -929,8 +986,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_12_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_12">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_13">
             <span class="md-nav__icon md-icon"></span>
             Demonstrations
           </label>
@@ -1049,10 +1106,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_13" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_14" >
         
           
-          <label class="md-nav__link" for="__nav_2_13" id="__nav_2_13_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_14" id="__nav_2_14_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1063,8 +1120,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_13_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_13">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_14">
             <span class="md-nav__icon md-icon"></span>
             Training
           </label>
@@ -1114,6 +1171,10 @@
   
     
     
+      
+        
+      
+        
       
         
       
@@ -1445,6 +1506,48 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide_word_addin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Word Add-In
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide_extensions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extensions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1480,7 +1583,7 @@
             
   
   <span class="md-ellipsis">
-    FAQ
+    Alliance
   </span>
   
 
@@ -1489,6 +1592,76 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Alliance
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../collab_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Alliance Vision Established - Collaboration Agreement Signed
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             FAQ
           </label>
@@ -1549,9 +1722,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pre-requisites" class="md-nav__link">
+  <a href="#public-sandbox-access" class="md-nav__link">
     <span class="md-ellipsis">
-      Pre-Requisites
+      Public Sandbox Access
     </span>
   </a>
   
@@ -1567,36 +1740,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#neo4j-licenses" class="md-nav__link">
+  <a href="#pre-requisites" class="md-nav__link">
     <span class="md-ellipsis">
-      Neo4j Licenses
+      Pre-Requisites
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#neo4j-evaluation-environments" class="md-nav__link">
+  <a href="#neo4j-licenses-and-setup" class="md-nav__link">
     <span class="md-ellipsis">
-      Neo4j Evaluation Environments
+      Neo4j Licenses and Setup
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#neo4j-contact-details" class="md-nav__link">
+  <a href="#htp42-evaluation-environments" class="md-nav__link">
     <span class="md-ellipsis">
-      Neo4j Contact details
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#public-sandbox-access" class="md-nav__link">
-    <span class="md-ellipsis">
-      Public Sandbox Access
+      HTP42 Evaluation Environments
     </span>
   </a>
   
@@ -1616,55 +1780,76 @@
                 
                   
 
-  
-  
 
-
-<h1 id="environments">Environments<a class="headerlink" href="#environments" title="Permanent link">&para;</a></h1>
-<h2 id="pre-requisites">Pre-Requisites<a class="headerlink" href="#pre-requisites" title="Permanent link">&para;</a></h2>
-<p>To run the OpenStudyBuilder, you will need the following pre-requisites:</p>
-<p><img alt="OpenStudyBuilder Pre-requisites (Neo4j and a CDISC Library API Key)" src="../img/info_environment_01.png" /></p>
-<p>The current implementation required <strong>CDISC library access</strong> via a library API key to access CDISC standards (freely available also for non-CDISC-members). This is used to receive CDISC standards and processed in the MDR-Standards-Import scripts which load for example new CDISC Controlled Terminology into the OpenStudyBuilder.</p>
-<p>As OpenStudyBuilder is using a Neo4j graph database, a <strong>Neo4j database license</strong> is required. We highly recommend using the enterprise or AuraDB license which comes along with services and features recommended. It is also possible to use the GPLv3 licensed community edition which is available at no cost. OpenStudyBuilder can also run on the community edition, but some features like consistency checks are not be available. The migration scripts we provide to update the database schema from an old to a new version will also not be running and would need manual updatings.</p>
+<h1 class="guideH1" id="environments">Environments<a class="headerlink" href="#environments" title="Permanent link">&para;</a></h1>
+<p class="guideCreated">(updated 2026-06-23) </p>
+<h2 id="public-sandbox-access">Public Sandbox Access<a class="headerlink" href="#public-sandbox-access" title="Permanent link">&para;</a></h2>
+<p>The public sandbox provides a convenient way for anyone to explore and test OpenStudyBuilder without the need to install any software. To request access to the sandbox environment, simply send an email to <a href="mailto:openstudybuilder@htp42.com?subject=Request%20Sandbox%20Access">openstudybuilder@htp42.com (Request Sandbox Access)</a>.</p>
+<p>The solution can then be accessed via the following link: <a href="https://sandbox.openstudybuilder.com/" target="_blank">sandbox.openstudybuilder.com</a>.</p>
+<p>Please be aware that the sandbox is refreshed periodically, which means any data you create will be lost after a refresh. Additionally, all data in the sandbox is publicly accessible to anyone with sandbox access. For transparency and traceability, all data entries are tracked with the user's email address and are visible to everyone using the sandbox. Therefore, please avoid entering any sensitive or confidential information. The sandbox is intended for evaluation and learning purposes only.</p>
+<p><img alt="New URL for Sandbox Environment" src="../img/info_environment_02.png" /></p>
 <h2 id="deployment-options">Deployment Options<a class="headerlink" href="#deployment-options" title="Permanent link">&para;</a></h2>
 <p>The OpenStudyBuilder is a modular solution consisting of several components, including a Neo4j database, a web application, and an API and more. The system can be deployed in various ways, depending on your needs and preferences. Access to the open-source code is available via <a href="https://github.com/NovoNordisk-OpenSource/openstudybuilder-solution" target="_blank">GitHub</a>. The repository contains <a href="https://github.com/NovoNordisk-OpenSource/openstudybuilder-solution/blob/main/README.md" target="_blank">installation instructions</a> using docker. Furthermore, each component has its own readme file with installation instructions and can be installed independently.</p>
+<p>We have an <a href="https://github.com/NovoNordisk-OpenSource/openstudybuilder-accelerators" target="_blank">OpenStudyBuilder accelerators repository</a> where other deployment options are available. There is a simple deployment available via existing pre-compiled images. Furthermore, a complex HELM chart is available with different configurations to serve complex business needs.</p>
 <table>
 <thead>
 <tr>
 <th>Option</th>
 <th>Description</th>
+<th>Where to start</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Local Desktop</td>
 <td>The OpenStudyBuilder can be run on a local desktop environment</td>
+<td><a href="https://github.com/NovoNordisk-OpenSource/openstudybuilder-solution/blob/main/README.md" target="_blank">Installation instructions</a></td>
 </tr>
 <tr>
 <td>Server Installation</td>
-<td>OpenStudyBuilder can be setup to run on a server</td>
+<td>OpenStudyBuilder can be set up to run on a server</td>
+<td><a href="https://github.com/NovoNordisk-OpenSource/openstudybuilder-accelerators" target="_blank">Accelerators repository</a></td>
 </tr>
 <tr>
 <td>Cloud</td>
 <td>The OpenStudyBuilder can be deployed on all major cloud platforms</td>
+<td><a href="https://github.com/NovoNordisk-OpenSource/openstudybuilder-accelerators" target="_blank">Accelerators repository</a></td>
 </tr>
 <tr>
 <td>Hosted Cloud Environment</td>
 <td>The OpenStudyBuilder can be hosted by a vendor</td>
+<td><a href="../info_services/">Services</a></td>
 </tr>
 <tr>
 <td>Sandbox</td>
 <td>A public sandbox environment is available for evaluation purposes</td>
+<td><a href="mailto:openstudybuilder@htp42.com?subject=Request%20Sandbox%20Access">Request access</a></td>
 </tr>
 </tbody>
 </table>
-<p>Access to a cloud-based or a dedicated evaluation environment can be provided by Neo4j free of charge. Please check the following section for more information.</p>
-<h2 id="neo4j-licenses">Neo4j Licenses<a class="headerlink" href="#neo4j-licenses" title="Permanent link">&para;</a></h2>
-<p>The OpenStudyBuilder docker setup is using the Neo4j Enterprise version. This can be used for evaluation and test purposes. To use OpenStudyBuilder in production, either purchase an Enterprise version or switch to the community edition (see <a href="../info_osb_hub/#neo4j-community-edition">here</a>).</p>
+<h2 id="pre-requisites">Pre-Requisites<a class="headerlink" href="#pre-requisites" title="Permanent link">&para;</a></h2>
+<p>To run the OpenStudyBuilder, you will need the following pre-requisites:</p>
+<p><img alt="OpenStudyBuilder Pre-requisites (Neo4j and a CDISC Library API Key)" src="../img/info_environment_01.png" /></p>
+<p>The current implementation requires <strong>CDISC library access</strong> via a library API key to access CDISC standards (freely available also for non-CDISC-members). This is used to receive CDISC standards and processed in the MDR-Standards-Import scripts which load for example new CDISC Controlled Terminology into the OpenStudyBuilder.</p>
+<p>As OpenStudyBuilder is using a Neo4j graph database, a <strong>Neo4j database license</strong> is required. We highly recommend using the enterprise or AuraDB license which comes along with services and features recommended. It is also possible to use the GPLv3 licensed community edition which is available at no cost. OpenStudyBuilder can also run on the community edition, but some features like consistency checks will not be available. The migration scripts we provide to update the database schema from an old to a new version will also not be running and would need manual updating.</p>
+<h2 id="neo4j-licenses-and-setup">Neo4j Licenses and Setup<a class="headerlink" href="#neo4j-licenses-and-setup" title="Permanent link">&para;</a></h2>
+<p>The OpenStudyBuilder docker setup is using the Neo4j Enterprise version. This can be used for evaluation and test purposes. To use OpenStudyBuilder in production, either purchase an Enterprise version or switch to the <a href="../info_osb_hub/#neo4j-community-edition">community edition</a>.</p>
 <p>Neo4j offers a number of commercial licensing options, including free licenses for development, startups, academic-educational uses and of course, evaluation.</p>
-<h2 id="neo4j-evaluation-environments">Neo4j Evaluation Environments<a class="headerlink" href="#neo4j-evaluation-environments" title="Permanent link">&para;</a></h2>
-<p>To evaluate the OpenStudyBuilder, Neo4j can provide you with an evaluation environment in different flavors, cloud-based and leveraging AuraDB.</p>
-<p>This environment can be provided to you in different ways:</p>
+<p>OpenStudyBuilder can run differently with Neo4j. It can use the Enterprise version or the AuraDB cloud database service. For AuraDB the following options are available:</p>
+<ol>
+<li>Neo4j AuraDB database + OpenStudyBuilder App and API</li>
+<li>Neo4j AuraDB database + OpenStudyBuilder API (build your frontend)</li>
+<li>Neo4j AuraDB database only (for exploration purposes)</li>
+</ol>
+<p>To learn more, visit the <a href="https://neo4j.com/cloud/platform/aura-graph-database/" target="_blank">AuraDB website</a>.</p>
+<p>For more information about Neo4j licenses and deployment options:</p>
+<ul>
+<li>Jan Aertsen - Professional Services EMEA</li>
+<li>+32(485)329828 &amp; +39(339)8702150</li>
+<li><a href="mailto:openstudybuilder@neotechnology.com">openstudybuilder@neotechnology.com</a></li>
+</ul>
+<h2 id="htp42-evaluation-environments">HTP42 Evaluation Environments<a class="headerlink" href="#htp42-evaluation-environments" title="Permanent link">&para;</a></h2>
+<p>To evaluate the OpenStudyBuilder, HealthTechPartners42 provides a free hosted sandbox environment. They also offer additional evaluation environments.</p>
 <table>
 <thead>
 <tr>
@@ -1686,14 +1871,6 @@
 <td>Free</td>
 </tr>
 <tr>
-<td>Custom sandbox</td>
-<td>Restricted</td>
-<td>Optionally</td>
-<td>Yes</td>
-<td>No</td>
-<td>Free - Limited time</td>
-</tr>
-<tr>
 <td>Dedicated</td>
 <td>Restricted</td>
 <td>Yes</td>
@@ -1703,30 +1880,7 @@
 </tr>
 </tbody>
 </table>
-<p>All of the above can be made available in a modular fashion, for instance:</p>
-<ol>
-<li>Neo4j AuraDB database + OpenStudyBuilder App and API</li>
-<li>Neo4j AuraDB database + OpenStudyBuilder API (build your own Study Builder app on top of it)</li>
-<li>Neo4j AuraDB database only (for exploration purposes)</li>
-</ol>
-<p>Please note that Neo4j AuraDB exists in 3 flavors :</p>
-<ol>
-<li>Free - Free forever, with limited number of nodes and relationships</li>
-<li>Pro - Pay as you go, for medium scale applications</li>
-<li>Enterprise - Advanced security and support</li>
-</ol>
-<p>To learn more, visit the <a href="https://neo4j.com/cloud/platform/aura-graph-database/">AuraDB website here</a>, or see contact details below.</p>
-<h2 id="neo4j-contact-details">Neo4j Contact details<a class="headerlink" href="#neo4j-contact-details" title="Permanent link">&para;</a></h2>
-<p>For more information about the evaluation environment, please use the following contact information:</p>
-<ul>
-<li>Jan Aertsen - Professional Services EMEA</li>
-<li>+32(485)329828 &amp; +39(339)8702150</li>
-<li><a href="mailto:openstudybuilder@neotechnology.com">openstudybuilder@neotechnology.com</a></li>
-</ul>
-<h2 id="public-sandbox-access">Public Sandbox Access<a class="headerlink" href="#public-sandbox-access" title="Permanent link">&para;</a></h2>
-<p>The public sandbox provides a convenient way for anyone to explore and test OpenStudyBuilder without the need to install any software. To request access to the sandbox environment, simply send an email to <a href="mailto:openstudybuilder@neotechnology.com?subject=Request%20Sandbox%20Access">openstudybuilder@neotechnology.com (Request Sandbox Access)</a>. </p>
-<p>The solution can then be accessed via the following link: <a href="https://openstudybuilder.northeurope.cloudapp.azure.com/" target="_blank">OpenStudyBuilder Sandbox</a>.</p>
-<p>Please be aware that the sandbox is refreshed periodically, which means any data you create will be lost after a refresh. Additionally, all data in the sandbox is publicly accessible to anyone with sandbox access. For transparency and traceability, all data entries are tracked with the user's email address and are visible to everyone using the sandbox. Therefore, please avoid entering any sensitive or confidential information. The sandbox is intended for evaluation and learning purposes only. </p>
+<p>For more information, please reach out to HTP42: <a href="mailto:openstudybuilder@htp42.com">openstudybuilder@htp42.com</a>.</p>
 
 
 
@@ -1749,28 +1903,43 @@
         
       </main>
       
-        <footer class="md-footer">
-  
+
+
+<!-- Footer -->
+<footer class="md-footer">
+  <!-- Further information -->
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
-  
-    <div class="md-copyright__highlight">
-      Copyright &copy; 2025 OpenStudyBuilder Project
-    </div>
-  
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
-  
-</div>
+
+      <!-- Copyright and theme information -->
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2026 OpenStudyBuilder Project
+          </div>
+        
+        
+
+        <!-- Custom footer links -->
+        <p style="margin-top: 0.3rem; color: var(--md-footer-fg-color--lighter);">
+          <a href="https://github.com/NovoNordisk-OpenSource/openstudybuilder-description" target="_blank" rel="noopener" style="color: var(--md-footer-fg-color--lighter); text-decoration: none;">
+            Site Source
+          </a>&nbsp;|&nbsp;
+          <a href="../../privacy_policy/" style="color: var(--md-footer-fg-color--lighter); text-decoration: none;">
+            Privacy Policy
+          </a>&nbsp;|&nbsp;
+          <a href="../../imprint/" style="color: var(--md-footer-fg-color--lighter); text-decoration: none;">
+            Imprint
+          </a>
+        </p>
+      </div>
+
+      <!-- Social links -->
       
     </div>
   </div>
 </footer>
-      
+
     </div>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>

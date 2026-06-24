@@ -65,22 +65,75 @@
       
 
 <header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
+  <nav class="md-header__inner md-grid" aria-label="Header" style="display: flex; align-items: flex-end; position: relative;">
+
+    <!-- Logo -->
     <a href=".." title="OpenStudyBuilder" class="md-header__button md-logo" aria-label="OpenStudyBuilder" data-md-component="logo">
       
-  <img src="../logoMini.svg" alt="logo">
+  <img src="../logoMiniSquare.svg" alt="logo">
 
     </a>
+
+    <!-- Mobile drawer button -->
     <label class="md-header__button md-icon" for="__drawer">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
-    <div class="md-header__title" data-md-component="header-title">
+
+    <!-- Navigation tabs inline, bottom-aligned -->
+    
+      <div class="md-header__tabs" style="display: flex; align-items: flex-end; padding-left: 1rem; padding-bottom: 0.4rem;">
+        <ul class="md-tabs__list" style="display: flex; list-style: none; margin: 0; padding: 0; gap: 0.1rem;">
+          
+            
+              <li class="md-tabs__item">
+                <a href=".." class="md-tabs__link ">
+                  Home
+                </a>
+              </li>
+            
+          
+            
+              <li class="md-tabs__item">
+                <a href="../status/" class="md-tabs__link md-tabs__link--active">
+                  Info
+                </a>
+              </li>
+            
+          
+            
+              <li class="md-tabs__item">
+                <a href="../guide_intro/" class="md-tabs__link ">
+                  Guides
+                </a>
+              </li>
+            
+          
+            
+              <li class="md-tabs__item">
+                <a href="../collab_intro/" class="md-tabs__link ">
+                  Alliance
+                </a>
+              </li>
+            
+          
+            
+              <li class="md-tabs__item">
+                <a href="../faq/" class="md-tabs__link ">
+                  FAQ
+                </a>
+              </li>
+            
+          
+        </ul>
+      </div>
+    
+
+    <!-- Title region: required for search expansion -->
+    <div class="md-header__title" data-md-component="header-title" style="flex: 1; min-width: 0; visibility: hidden;">
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
-          <span class="md-ellipsis">
-            OpenStudyBuilder
-          </span>
+          <span class="md-ellipsis">OpenStudyBuilder</span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
@@ -91,17 +144,13 @@
         </div>
       </div>
     </div>
-    
-    
-      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
-    
-    
-    
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+
+    <!-- Search toggle label + search component -->
+    <label class="md-header__button md-icon" for="__search">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+    </label>
+    <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -133,22 +182,8 @@
     </div>
   </div>
 </div>
-    
-    
-      <div class="md-header__source">
-        <a href="https://github.com/NovoNordisk-OpenSource/openstudybuilder-description" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
-  </div>
-  <div class="md-source__repository">
-    OpenStudyBuilder
-  </div>
-</a>
-      </div>
-    
+
   </nav>
-  
 </header>
     
     <div class="md-container" data-md-component="container">
@@ -171,7 +206,7 @@
   
     
   
-  Description
+  Home
 
       </a>
     </li>
@@ -227,6 +262,26 @@
     
     
       <li class="md-tabs__item">
+        <a href="../collab_intro/" class="md-tabs__link">
+          
+  
+    
+  
+  Alliance
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
         <a href="../faq/" class="md-tabs__link">
           
   
@@ -264,23 +319,11 @@
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="OpenStudyBuilder" class="md-nav__button md-logo" aria-label="OpenStudyBuilder" data-md-component="logo">
       
-  <img src="../logoMini.svg" alt="logo">
+  <img src="../logoMiniSquare.svg" alt="logo">
 
     </a>
     OpenStudyBuilder
   </label>
-  
-    <div class="md-nav__source">
-      <a href="https://github.com/NovoNordisk-OpenSource/openstudybuilder-description" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
-  </div>
-  <div class="md-source__repository">
-    OpenStudyBuilder
-  </div>
-</a>
-    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -295,7 +338,7 @@
         
   
   <span class="md-ellipsis">
-    Description
+    Home
   </span>
   
 
@@ -314,6 +357,8 @@
   
     
     
+      
+        
       
         
       
@@ -403,6 +448,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../info_project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About the Project
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../info_events/" class="md-nav__link">
         
   
@@ -470,6 +536,102 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      2026
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2026">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#community-meeting-virtual" class="md-nav__link">
+    <span class="md-ellipsis">
+      Community Meeting (virtual)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cdisc-tmf-europe-interchange" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDISC + TMF Europe Interchange
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#digital-data-flow-ddf-mission-possible-hyperabad-india" class="md-nav__link">
+    <span class="md-ellipsis">
+      Digital Data Flow (DDF): Mission Possible - Hyperabad, India
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#community-meeting-virtual_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Community Meeting (virtual)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scdm-emea-conference" class="md-nav__link">
+    <span class="md-ellipsis">
+      SCDM - EMEA Conference
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#community-meeting-virtual_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Community Meeting (virtual)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#community-meeting-virtual_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Community Meeting (virtual)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#community-meeting-virtual_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Community Meeting (virtual)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#community-meeting-virtual_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Community Meeting (virtual)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#2025" class="md-nav__link">
     <span class="md-ellipsis">
       2025
@@ -480,7 +642,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual" class="md-nav__link">
+  <a href="#community-meeting-virtual_6" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -516,7 +678,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_1" class="md-nav__link">
+  <a href="#community-meeting-virtual_7" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -543,7 +705,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_2" class="md-nav__link">
+  <a href="#community-meeting-virtual_8" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -561,7 +723,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_3" class="md-nav__link">
+  <a href="#community-meeting-virtual_9" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -570,7 +732,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_4" class="md-nav__link">
+  <a href="#community-meeting-virtual_10" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -579,7 +741,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_5" class="md-nav__link">
+  <a href="#community-meeting-virtual_11" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -615,7 +777,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_6" class="md-nav__link">
+  <a href="#community-meeting-virtual_12" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -651,7 +813,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_7" class="md-nav__link">
+  <a href="#community-meeting-virtual_13" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -669,7 +831,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_8" class="md-nav__link">
+  <a href="#community-meeting-virtual_14" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -687,7 +849,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_9" class="md-nav__link">
+  <a href="#community-meeting-virtual_15" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -714,7 +876,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_10" class="md-nav__link">
+  <a href="#community-meeting-virtual_16" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -732,7 +894,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_11" class="md-nav__link">
+  <a href="#community-meeting-virtual_17" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -774,7 +936,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_12" class="md-nav__link">
+  <a href="#community-meeting-virtual_18" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -801,7 +963,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_13" class="md-nav__link">
+  <a href="#community-meeting-virtual_19" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -828,7 +990,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_14" class="md-nav__link">
+  <a href="#community-meeting-virtual_20" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -855,7 +1017,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_15" class="md-nav__link">
+  <a href="#community-meeting-virtual_21" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -882,7 +1044,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_16" class="md-nav__link">
+  <a href="#community-meeting-virtual_22" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -918,7 +1080,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_17" class="md-nav__link">
+  <a href="#community-meeting-virtual_23" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -927,7 +1089,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_18" class="md-nav__link">
+  <a href="#community-meeting-virtual_24" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -972,7 +1134,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_19" class="md-nav__link">
+  <a href="#community-meeting-virtual_25" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -999,7 +1161,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_20" class="md-nav__link">
+  <a href="#community-meeting-virtual_26" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -1008,7 +1170,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_21" class="md-nav__link">
+  <a href="#community-meeting-virtual_27" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -1068,7 +1230,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_22" class="md-nav__link">
+  <a href="#community-meeting-virtual_28" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -1086,7 +1248,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_23" class="md-nav__link">
+  <a href="#community-meeting-virtual_29" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -1122,7 +1284,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_24" class="md-nav__link">
+  <a href="#community-meeting-virtual_30" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -1375,10 +1537,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
         
           
-          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1389,8 +1551,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_5">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
             <span class="md-nav__icon md-icon"></span>
             Collaboration
           </label>
@@ -1704,10 +1866,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_12" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_13" >
         
           
-          <label class="md-nav__link" for="__nav_2_12" id="__nav_2_12_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_13" id="__nav_2_13_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1718,8 +1880,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_12_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_12">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_13">
             <span class="md-nav__icon md-icon"></span>
             Demonstrations
           </label>
@@ -1838,10 +2000,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_13" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_14" >
         
           
-          <label class="md-nav__link" for="__nav_2_13" id="__nav_2_13_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_14" id="__nav_2_14_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1852,8 +2014,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_13_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_13">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_14">
             <span class="md-nav__icon md-icon"></span>
             Training
           </label>
@@ -1903,6 +2065,10 @@
   
     
     
+      
+        
+      
+        
       
         
       
@@ -2234,6 +2400,48 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide_word_addin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Word Add-In
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide_extensions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extensions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2269,7 +2477,7 @@
             
   
   <span class="md-ellipsis">
-    FAQ
+    Alliance
   </span>
   
 
@@ -2278,6 +2486,76 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Alliance
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../collab_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Alliance Vision Established - Collaboration Agreement Signed
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             FAQ
           </label>
@@ -2338,6 +2616,102 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      2026
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2026">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#community-meeting-virtual" class="md-nav__link">
+    <span class="md-ellipsis">
+      Community Meeting (virtual)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cdisc-tmf-europe-interchange" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDISC + TMF Europe Interchange
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#digital-data-flow-ddf-mission-possible-hyperabad-india" class="md-nav__link">
+    <span class="md-ellipsis">
+      Digital Data Flow (DDF): Mission Possible - Hyperabad, India
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#community-meeting-virtual_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Community Meeting (virtual)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scdm-emea-conference" class="md-nav__link">
+    <span class="md-ellipsis">
+      SCDM - EMEA Conference
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#community-meeting-virtual_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Community Meeting (virtual)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#community-meeting-virtual_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Community Meeting (virtual)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#community-meeting-virtual_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Community Meeting (virtual)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#community-meeting-virtual_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Community Meeting (virtual)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#2025" class="md-nav__link">
     <span class="md-ellipsis">
       2025
@@ -2348,7 +2722,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual" class="md-nav__link">
+  <a href="#community-meeting-virtual_6" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -2384,7 +2758,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_1" class="md-nav__link">
+  <a href="#community-meeting-virtual_7" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -2411,7 +2785,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_2" class="md-nav__link">
+  <a href="#community-meeting-virtual_8" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -2429,7 +2803,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_3" class="md-nav__link">
+  <a href="#community-meeting-virtual_9" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -2438,7 +2812,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_4" class="md-nav__link">
+  <a href="#community-meeting-virtual_10" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -2447,7 +2821,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_5" class="md-nav__link">
+  <a href="#community-meeting-virtual_11" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -2483,7 +2857,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_6" class="md-nav__link">
+  <a href="#community-meeting-virtual_12" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -2519,7 +2893,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_7" class="md-nav__link">
+  <a href="#community-meeting-virtual_13" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -2537,7 +2911,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_8" class="md-nav__link">
+  <a href="#community-meeting-virtual_14" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -2555,7 +2929,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_9" class="md-nav__link">
+  <a href="#community-meeting-virtual_15" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -2582,7 +2956,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_10" class="md-nav__link">
+  <a href="#community-meeting-virtual_16" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -2600,7 +2974,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_11" class="md-nav__link">
+  <a href="#community-meeting-virtual_17" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -2642,7 +3016,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_12" class="md-nav__link">
+  <a href="#community-meeting-virtual_18" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -2669,7 +3043,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_13" class="md-nav__link">
+  <a href="#community-meeting-virtual_19" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -2696,7 +3070,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_14" class="md-nav__link">
+  <a href="#community-meeting-virtual_20" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -2723,7 +3097,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_15" class="md-nav__link">
+  <a href="#community-meeting-virtual_21" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -2750,7 +3124,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_16" class="md-nav__link">
+  <a href="#community-meeting-virtual_22" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -2786,7 +3160,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_17" class="md-nav__link">
+  <a href="#community-meeting-virtual_23" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -2795,7 +3169,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_18" class="md-nav__link">
+  <a href="#community-meeting-virtual_24" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -2840,7 +3214,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_19" class="md-nav__link">
+  <a href="#community-meeting-virtual_25" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -2867,7 +3241,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_20" class="md-nav__link">
+  <a href="#community-meeting-virtual_26" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -2876,7 +3250,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_21" class="md-nav__link">
+  <a href="#community-meeting-virtual_27" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -2936,7 +3310,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_22" class="md-nav__link">
+  <a href="#community-meeting-virtual_28" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -2954,7 +3328,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_23" class="md-nav__link">
+  <a href="#community-meeting-virtual_29" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -2990,7 +3364,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#community-meeting-virtual_24" class="md-nav__link">
+  <a href="#community-meeting-virtual_30" class="md-nav__link">
     <span class="md-ellipsis">
       Community Meeting (virtual)
     </span>
@@ -3194,11 +3568,98 @@
                 
                   
 
-  
-  
-
 
 <h1 id="past-events">Past Events<a class="headerlink" href="#past-events" title="Permanent link">&para;</a></h1>
+<h2 id="2026">2026<a class="headerlink" href="#2026" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>15 June 2026</td>
+<td>Community Meeting (virtual)</td>
+</tr>
+<tr>
+<td>18-22 May 2026</td>
+<td>CDISC + TMF Europe Interchange - Milan, Italy</td>
+</tr>
+<tr>
+<td>13 May 2026</td>
+<td>Digital Data Flow (DDF): Mission Possible - Hyperabad, India</td>
+</tr>
+<tr>
+<td>11 May 2026</td>
+<td>Community Meeting (virtual)</td>
+</tr>
+<tr>
+<td>3-5 Mai 2026</td>
+<td>SCDM - EMEA Conference - Copenhagen, Denmark</td>
+</tr>
+<tr>
+<td>13 April 2026</td>
+<td>Community Meeting (virtual)</td>
+</tr>
+<tr>
+<td>9 March 2026</td>
+<td>Community Meeting (virtual)</td>
+</tr>
+<tr>
+<td>9 February 2026</td>
+<td>Community Meeting (virtual)</td>
+</tr>
+<tr>
+<td>12 January 2026</td>
+<td>Community Meeting (virtual)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="community-meeting-virtual">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual" title="Permanent link">&para;</a></h3>
+<p>(15 June 2026, virtual event)</p>
+<p>We discussed various aspects of the OpenStudyBuilder in our monthly community meeting.</p>
+<h3 id="cdisc-tmf-europe-interchange">CDISC + TMF Europe Interchange<a class="headerlink" href="#cdisc-tmf-europe-interchange" title="Permanent link">&para;</a></h3>
+<p>(18-22 May 2026 - Milan, Italy) </p>
+<p><strong>OpenStudyBuilder: Our Journey So Far and the Road Ahead</strong> (<a href="../presentations/2026-05-20-CDISCEUInterchange-Collaboration.pdf" target="_blank">slides</a>)</p>
+<p>(Wednesday 14:00-14:30 by Katja Gla&szlig; and Mikkel Train)</p>
+<p>OpenStudyBuilder is an open-source metadata and study definition repository supporting standards-based clinical trial automation. This presentation briefly reflects on key milestones and collaborations to date, including alignment with initiatives such as CDISC 360i and TransCelerate Digital Data Flow. The main focus, however, is on the road ahead: the evolving vision, strategic roadmap, and collaboration models designed to strengthen industry participation and shared ownership. Attendees will gain insight into how OpenStudyBuilder aims to further mature as a collaborative platform enabling scalable, standards-driven innovation.</p>
+<p><strong>From USDM to M11 and Back: OpenStudyBuilder as the Round‑Trip Engine</strong> (<a href="../presentations/2026-05-20-CDISCEUInterchange-ICH-M11.pdf" target="_blank">slides</a>)</p>
+<p>(Wednesday 15:00 - 15:30 by Mikkel Traun and Nicolas de Saint Jorre)</p>
+<p>This presentation explores the integration of the Unified Study Data Model (USDM) including M11 support in OpenStudyBuilder, an open-source repository for metadata and study definitions.
+The USDM and M11 standards streamline the exchange of study and protocol definitions, facilitating end-to-end automation across multiple systems. OpenStudyBuilder enhances these processes with its open interfaces and native data model, offering study exports in USDM and M11 formats as JSON or HTML file. This will now include support for narrative content, enabling us to fully support M11 document content in USDM.
+The application also support M11 preview for easy overview supporting reviews and updates of structured M11 content managed within OpenStudyBuilder. Additionally, the API enables connectivity with other USDM-compliant systems.
+We will discuss the challenges faced, and highlight the opportunities presented by adopting this innovative USDM standard.</p>
+<p><strong>Buy one - get three! Rule-Based Naming and Standardization of SoA, SDTM, and ADaM Metadata</strong> (<a href="../presentations/2026-05-21-CDISC-Interchange-CodeX.pdf" target="_blank">slides</a>)</p>
+<p>(Thursday 12:00 - 12:30 by Martin Gram and Julie S. B&oslash;dker)</p>
+<p>CodeX accelerates creation of high-quality metadata when new concepts for clinical trials are not yet defined. The tool integrates with the OpenStudyBuilder API to view existing concepts to avoid redundancy and to save new concepts directly in the library. Starting from preliminary inputs from subject-matter experts, it identifies concepts by searching CDISC Biomedical Concepts, CDISC Controlled Terminology, and the NCI Thesaurus. When a match exists, the preferred name and definition are combined with business rules and SDTM domain-specific rules to auto-generate SDTM metadata, Schedule of Activities name, and ADaM PARAM/PARAMCD. If no match exists, AI agents suggest a draft name and definition based on the content in the dictionaries. By replacing complex written naming conventions with guided automation, CodeX accelerates and improves metadata creation in a process that is easy to learn and update as standards evolve. It reduces redundancy resulting in faster trial metadata setup and reduced standards maintenance.</p>
+<h3 id="digital-data-flow-ddf-mission-possible-hyperabad-india">Digital Data Flow (DDF): Mission Possible - Hyperabad, India<a class="headerlink" href="#digital-data-flow-ddf-mission-possible-hyperabad-india" title="Permanent link">&para;</a></h3>
+<p>(13 May 2026 - Hyperabad, India) </p>
+<p><strong>DDF Adoption Story</strong></p>
+<p>(by Kirubavathi Selvaraj, Novo Nordisk)</p>
+<p>Kirubavathi presented on how Novo Nordisk is adopting DDF and OSB. She explained how the goal is to digitalize study specification metadata to improve reusability and enable automation, reducing manual, document-driven work aligned with our “One Digital Data Flow” vision. She also highlighted the importance of ensuring that both protocol users and digital study data specification users can work effectively with OpenStudyBuilder to support automation, while sustaining adoption and organizational support.</p>
+<p>The presentation slides are available <a href="../presentations/2026-05-13-NN_DDF%20Adoption%20Journey_2026.pdf" target="_blank">here</a>.</p>
+<h3 id="community-meeting-virtual_1">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_1" title="Permanent link">&para;</a></h3>
+<p>(11 May 2026, virtual event)</p>
+<p>We discussed various aspects of the OpenStudyBuilder in our monthly community meeting.</p>
+<h3 id="scdm-emea-conference">SCDM - EMEA Conference<a class="headerlink" href="#scdm-emea-conference" title="Permanent link">&para;</a></h3>
+<p>(3-5 May 2026 - Copenhagen, Denmark)</p>
+<p><strong>Streamlining Study Setup: From Protocol to Data Collection with OpenStudyBuilder</strong></p>
+<p>There had been a whole track about OpenStudyBuilder. Checkout the slides from Novo Nordisk, Veeva and HTP42!</p>
+<p>The presentation slides are available <a href="../presentations/2026-04-30-SCDM-2026-EMEA-Conference-OSB%20Session.pdf" target="_blank">here</a>.</p>
+<h3 id="community-meeting-virtual_2">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_2" title="Permanent link">&para;</a></h3>
+<p>(13 April 2026, virtual event)</p>
+<p>We discussed various aspects of the OpenStudyBuilder in our monthly community meeting.</p>
+<h3 id="community-meeting-virtual_3">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_3" title="Permanent link">&para;</a></h3>
+<p>(9 March 2026, virtual event)</p>
+<p>We discussed various aspects of the OpenStudyBuilder in our monthly community meeting.</p>
+<h3 id="community-meeting-virtual_4">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_4" title="Permanent link">&para;</a></h3>
+<p>(9 February 2026, virtual event)</p>
+<p>We discussed various aspects of the OpenStudyBuilder in our monthly community meeting.</p>
+<h3 id="community-meeting-virtual_5">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_5" title="Permanent link">&para;</a></h3>
+<p>(12 January 2026, virtual event)</p>
+<p>We discussed various aspects of the OpenStudyBuilder in our monthly community meeting.</p>
 <h2 id="2025">2025<a class="headerlink" href="#2025" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -3326,7 +3787,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="community-meeting-virtual">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual" title="Permanent link">&para;</a></h3>
+<h3 id="community-meeting-virtual_6">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_6" title="Permanent link">&para;</a></h3>
 <p>(8 December 2025, virtual event)</p>
 <p>We discussed various aspects of the OpenStudyBuilder in our monthly community meeting.</p>
 <h3 id="external-webinar-structured-authoring">(external) Webinar - Structured Authoring<a class="headerlink" href="#external-webinar-structured-authoring" title="Permanent link">&para;</a></h3>
@@ -3334,7 +3795,7 @@
 <p><strong>Breaking the Protocol Bottleneck: Digital Transformation with CDISC USDM and Structured Authoring</strong></p>
 <p>(by Murali Menon, Docuvera and Katja Glass, Consultant)</p>
 <p>linical trials are often slowed by manual, document-based processes, redundant authoring, and fragmented data systems, leading to long protocol approval cycles and compliance risks. The Open Study Builder (OSB)–Docuvera integration addresses these challenges by transforming protocol creation from a document-centric to a data-centric workflow. Leveraging CDISC USDM and TransCelerate Digital Data Flow (DDF) standards, the solution enables real-time data exchange, automated ICH M11-compliant protocol generation, and FHIR export for regulatory use. This seamless, structured approach accelerates study startup, improves consistency, and reduces operational burden across the clinical trial lifecycle.</p>
-<p>Video recording will soon be available.</p>
+<p>Video recording is available on <a href="https://youtu.be/yRZASUBmwY0?si=YH-tPlxP3rDeplsj" target="_blank">YouTube</a>.</p>
 <p>The presentation slides are available <a href="../presentations/2025-12-02-OSB-DocuVera-Integration.pdf" target="_blank">here</a>.</p>
 <h3 id="external-webinar-structured-content-management">(external) Webinar - Structured Content Management<a class="headerlink" href="#external-webinar-structured-content-management" title="Permanent link">&para;</a></h3>
 <p>(26 November 2025, virtual event, 16:00-17:00 CET)</p>
@@ -3347,7 +3808,7 @@
 <p>At PHUSE EU Connect (16-19 November 2025, Hamburg), we shared OpenStudyBuilder journey on our poster, <strong>Status and Updates of OpenStudyBuilder</strong>, and demonstrated the end-to-end enablement of OpenStudyBuilder in the <strong>360i</strong> track. </p>
 <p>The presentation slides are available <a href="../presentations/2025-11-18-PHUSE-EU-2025-CDISC-360i-OSB.pdf" target="_blank">here</a>.</p>
 <p>The poster is available <a href="../presentations/2025-11-18-PosterPhusePP34.pdf" target="_blank">here</a>.</p>
-<h3 id="community-meeting-virtual_1">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_1" title="Permanent link">&para;</a></h3>
+<h3 id="community-meeting-virtual_7">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_7" title="Permanent link">&para;</a></h3>
 <p>(3 November 2025, virtual event)</p>
 <p>We discussed various aspects of the OpenStudyBuilder in our monthly community meeting.</p>
 <h3 id="external-scope-europe">(external) SCOPE Europe<a class="headerlink" href="#external-scope-europe" title="Permanent link">&para;</a></h3>
@@ -3361,20 +3822,20 @@
 <p>(13-14 October 2025 - Nashville, USA)</p>
 <p>We joined the CDISC US Interchange in Nashville, USA. Rhona presented in the 360i track on "CDISC 360i &amp; OpenStudyBuilder: From Vision to Implementation" and used the opportunity to talk to various people about the OpenStudyBuilder.</p>
 <p>The presentation slides are available <a href="../presentations/2025-10-14-Session5A-360iII-OSB-CDISC-US-2025.pdf" target="_blank">here</a>.</p>
-<h3 id="community-meeting-virtual_2">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_2" title="Permanent link">&para;</a></h3>
+<h3 id="community-meeting-virtual_8">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_8" title="Permanent link">&para;</a></h3>
 <p>(6 October 2025, virtual event) </p>
 <p>We discussed various aspects of the OpenStudyBuilder in our monthly community meeting.</p>
 <h3 id="ddf-mission-possible">DDF: Mission Possible<a class="headerlink" href="#ddf-mission-possible" title="Permanent link">&para;</a></h3>
 <p>(23-24 September 2025 - East Hanover, New Jersey &amp; Basel, Switzerland)</p>
 <p>Following the success of last year's DDF in Action Day, this year's event, DDF: Mission Possible - Assess, Plan &amp; Implement Protocol Digitalization Solutions, took place on September 23-24. It was co-hosted by Novartis in East Hanover, New Jersey, and Roche in Basel, Switzerland. We presented the status of DDF on our poster and could provide an update on our user adoption story. The event was very successful, we see more and more companies to adopt to USDM and were able to exchange ideas, experiences and challenges. </p>
 <p>The poster can be accessed <a href="../presentations/2025-09-OSB-USDM-Poster.pdf" target="_blank">here</a>.</p>
-<h3 id="community-meeting-virtual_3">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_3" title="Permanent link">&para;</a></h3>
+<h3 id="community-meeting-virtual_9">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_9" title="Permanent link">&para;</a></h3>
 <p>(8 September 2025, virtual event)</p>
 <p>We discussed various aspects of the OpenStudyBuilder in our monthly community meeting.</p>
-<h3 id="community-meeting-virtual_4">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_4" title="Permanent link">&para;</a></h3>
+<h3 id="community-meeting-virtual_10">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_10" title="Permanent link">&para;</a></h3>
 <p>(19 August 2025, virtual event)</p>
 <p>We discussed various aspects of the OpenStudyBuilder in our monthly community meeting.</p>
-<h3 id="community-meeting-virtual_5">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_5" title="Permanent link">&para;</a></h3>
+<h3 id="community-meeting-virtual_11">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_11" title="Permanent link">&para;</a></h3>
 <p>(7 July 2025, virtual event)</p>
 <p>We discussed various aspects of the OpenStudyBuilder in our monthly community meeting.</p>
 <h3 id="cdisc-guf-2025">CDISC GUF 2025<a class="headerlink" href="#cdisc-guf-2025" title="Permanent link">&para;</a></h3>
@@ -3391,7 +3852,7 @@
 <p><strong>Recording</strong> - Introduction (<a href="https://youtu.be/nSxa4gUCXeA">YouTube</a>), USDM Importer (<a href="https://youtu.be/eJ4C1ZFtK-8">YouTube</a>), Testing Strategies (<a href="https://youtu.be/LSGBAjjuFHE">YouTube</a>)</p>
 <!-- Meeting outcome is documented [here](./presentations/2025-04-28-osb-hub-trail-SystemEngineering-summary.pdf){target=_blank}. -->
 
-<h3 id="community-meeting-virtual_6">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_6" title="Permanent link">&para;</a></h3>
+<h3 id="community-meeting-virtual_12">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_12" title="Permanent link">&para;</a></h3>
 <p>(2 June 2025, 15:00-16:00 CET, virtual event)</p>
 <p>We discussed various aspects of the OpenStudyBuilder in our monthly community meeting.</p>
 <h3 id="cdisc-360i-working-group-at-cdisc-eu-interchange">CDISC 360i Working Group at CDISC EU Interchange<a class="headerlink" href="#cdisc-360i-working-group-at-cdisc-eu-interchange" title="Permanent link">&para;</a></h3>
@@ -3411,7 +3872,7 @@
 <p>In this interactive workshop, participants gained hands-on experience in designing a clinical study using OpenStudyBuilder, with a focus on the schedule of activities. The session explored how the CDISC 360i envisioned "Design" and "Build" processes are implemented within the tool. Attendees learned to create visits, assign activities, and export studies to USDM. The workshop included rendering into an M11 protocol. Additionally, participants selected data specifications for chosen activities, then exported and reviewed the structure definition in define.xml format. This workshop offered a practical introduction to the steps and processes, providing a first impression of how this workflow can transform clinical study development.</p>
 <p>The slides are available <a href="../presentations/2025-05-13-OpenStudyBuilder_Workshop_SoA.pdf" target="_blank">here</a>.</p>
 <p>The workshop tasks are available <a href="../workshop_2025/">here</a>.</p>
-<h3 id="community-meeting-virtual_7">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_7" title="Permanent link">&para;</a></h3>
+<h3 id="community-meeting-virtual_13">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_13" title="Permanent link">&para;</a></h3>
 <p>(5 May 2025, virtual event)</p>
 <p>We discussed various aspects of the OpenStudyBuilder in our monthly community meeting.</p>
 <h3 id="osb-trail-systemengineers-testing-loading-migration">OSB-Trail-SystemEngineers (Testing, Loading, Migration)<a class="headerlink" href="#osb-trail-systemengineers-testing-loading-migration" title="Permanent link">&para;</a></h3>
@@ -3419,7 +3880,7 @@
 <p>This session in our COSA Collaboration Team for OSB-Trail-SystemEngineers focused on Testing, Initial Loading, and Migrations.</p>
 <p>Checkout the presentation <a href="../presentations/2025-04-28-osb-hub-trail-SystemEngineering.pdf" target="_blank">here</a>.</p>
 <p>Meeting outcome is documented <a href="../presentations/2025-04-28-osb-hub-trail-SystemEngineering-summary.pdf" target="_blank">here</a>.</p>
-<h3 id="community-meeting-virtual_8">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_8" title="Permanent link">&para;</a></h3>
+<h3 id="community-meeting-virtual_14">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_14" title="Permanent link">&para;</a></h3>
 <p>(7 April 2025, virtual event)</p>
 <p>We discussed various aspects of the OpenStudyBuilder in our monthly community meeting.</p>
 <h3 id="osb-trail-systemengineers-apis">OSB-Trail-SystemEngineers (APIs)<a class="headerlink" href="#osb-trail-systemengineers-apis" title="Permanent link">&para;</a></h3>
@@ -3434,7 +3895,7 @@
 </ul>
 <p>Checkout the presentation <a href="../presentations/2025-03-24-osb-hub-trail-systemEngineering-API.pdf" target="_blank">here</a>.</p>
 <p>Meeting outcome is documented <a href="../presentations/2025-03-24-osb-hub-trail-systemengineers-summary.pdf" target="_blank">here</a>.</p>
-<h3 id="community-meeting-virtual_9">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_9" title="Permanent link">&para;</a></h3>
+<h3 id="community-meeting-virtual_15">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_15" title="Permanent link">&para;</a></h3>
 <p>(10 March 2025, virtual event)</p>
 <p>We discussed various aspects of the OpenStudyBuilder in our monthly community meeting.</p>
 <h3 id="acdm-prague">ACDM - Prague<a class="headerlink" href="#acdm-prague" title="Permanent link">&para;</a></h3>
@@ -3456,7 +3917,7 @@
 </ul>
 <p>Checkout the presentation <a href="../presentations/2025-02-24-osb-hub-trail-deployments.pdf" target="_blank">here</a>.</p>
 <p>Meeting outcome is documented <a href="../presentations/2025-02-24-DeploymentWorkflows.pdf" target="_blank">here</a>.</p>
-<h3 id="community-meeting-virtual_10">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_10" title="Permanent link">&para;</a></h3>
+<h3 id="community-meeting-virtual_16">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_16" title="Permanent link">&para;</a></h3>
 <p>(10 February 2025, virtual event)</p>
 <p>We discussed various aspects of the OpenStudyBuilder in our monthly community meeting.</p>
 <h3 id="osb-trail-systemengineers-kick-off-virtual">OSB-Trail-SystemEngineers Kick-Off (virtual)<a class="headerlink" href="#osb-trail-systemengineers-kick-off-virtual" title="Permanent link">&para;</a></h3>
@@ -3469,7 +3930,7 @@
 <li>Building a network of experts to tackle challenges and share innovative solutions.</li>
 </ul>
 <p>Join us in slack <a href="https://join.slack.com/t/osb-mdr/shared_invite/zt-2iwjqjg76-r0NW6pRH5GnGQQ~~izLc_A" target="_blank">here</a>!</p>
-<h3 id="community-meeting-virtual_11">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_11" title="Permanent link">&para;</a></h3>
+<h3 id="community-meeting-virtual_17">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_17" title="Permanent link">&para;</a></h3>
 <p>(13 January 2025, virtual event)</p>
 <p>We discussed various aspects of the OpenStudyBuilder in our monthly community meeting.</p>
 <h2 id="2024">2024<a class="headerlink" href="#2024" title="Permanent link">&para;</a></h2>
@@ -3606,7 +4067,7 @@
 <p>We had been happy to be part of the Digital Data Flow Solution Showcase. We present "USDM and Schedule of Activities in OpenStudyBuilder", our experiences of the DDF utilization within Novo Nordisk.</p>
 <p>The recording is available <a href="https://www.youtube.com/watch?v=66ZgsUHNfsI" target="_blank">here</a> - our part starts at 39'30.</p>
 <p>The slides are available <a href="../presentations/2024-12-05-DDF-Showcase-Final.pdf" target="_blank">here</a>.</p>
-<h3 id="community-meeting-virtual_12">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_12" title="Permanent link">&para;</a></h3>
+<h3 id="community-meeting-virtual_18">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_18" title="Permanent link">&para;</a></h3>
 <p>(2 December 2024, virtual event)</p>
 <p>We discussed various aspects of the OpenStudyBuilder in our monthly community meeting.</p>
 <h3 id="bvma-german-organization">BVMA (German Organization)<a class="headerlink" href="#bvma-german-organization" title="Permanent link">&para;</a></h3>
@@ -3626,7 +4087,7 @@
 <ul>
 <li><strong>Revolutionising Statistical Programming Activities – StatProg CoPilot Consortium Leveraging on Open-Source World and Generative AI</strong> by S&eacute;bastien Tourlet, CapGemini (<a href="https://phuse.s3.eu-central-1.amazonaws.com/Archive/2024/Connect/EU/Strasbourg/PRE_ML01.pdf" target="_blank">slides</a>, <a href="https://phuse.s3.eu-central-1.amazonaws.com/Archive/2024/Connect/EU/Strasbourg/PAP_ML01.pdf" target="_blank">paper</a>)</li>
 </ul>
-<h3 id="community-meeting-virtual_13">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_13" title="Permanent link">&para;</a></h3>
+<h3 id="community-meeting-virtual_19">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_19" title="Permanent link">&para;</a></h3>
 <p>(4 November 2024, virtual event)</p>
 <p>We discussed various aspects of the OpenStudyBuilder in our monthly community meeting.</p>
 <h3 id="cdisc-us-interchange_1">CDISC US Interchange<a class="headerlink" href="#cdisc-us-interchange_1" title="Permanent link">&para;</a></h3>
@@ -3645,7 +4106,7 @@
 <p>The introduction <strong>presentation</strong> is available here <a href="../presentations/2024-10-22-COSA-OSB-WS-EDC-Integration.pdf" target="_blank">here</a>.</p>
 <p>The example EDC integration <strong>presentation</strong> is available here <a href="../presentations/2024-10-22-COSA-OSB-WS-Oracle.pdf" target="_blank">here</a>.</p>
 <p>The final discussion <strong>notes</strong> are available here <a href="../presentations/2024-10-22-COSA-OSB-WS-Notes.pdf" target="_blank">here</a>.</p>
-<h3 id="community-meeting-virtual_14">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_14" title="Permanent link">&para;</a></h3>
+<h3 id="community-meeting-virtual_20">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_20" title="Permanent link">&para;</a></h3>
 <p>(14 October 2024, virtual event)</p>
 <p>We discussed various aspects of the OpenStudyBuilder in our monthly community meeting.</p>
 <h3 id="ddf-in-action-day-copenhagen-denmark-new-jersey-us">DDF in Action Day - Copenhagen, Denmark &amp; New Jersey, US<a class="headerlink" href="#ddf-in-action-day-copenhagen-denmark-new-jersey-us" title="Permanent link">&para;</a></h3>
@@ -3660,7 +4121,7 @@
 <p>by Anja Lundgreen and Antoni Palusinski, Novo Nordisk </p>
 <p>We had the pleasure to present a poster at the PHUSE SDE in Copenhagen. </p>
 <p>The poster can be accessed <a href="../presentations/2024-10-10-OSB-Poster-SDE-Copenhagen.pdf" target="_blank">here</a>.</p>
-<h3 id="community-meeting-virtual_15">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_15" title="Permanent link">&para;</a></h3>
+<h3 id="community-meeting-virtual_21">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_21" title="Permanent link">&para;</a></h3>
 <p>(16 September 2024, virtual event)</p>
 <p>We discussed various aspects of the OpenStudyBuilder in our monthly community meeting.</p>
 <h3 id="osb-trail-controlledterminology-action-planning-meeting">OSB-Trail-ControlledTerminology - Action Planning Meeting<a class="headerlink" href="#osb-trail-controlledterminology-action-planning-meeting" title="Permanent link">&para;</a></h3>
@@ -3674,7 +4135,7 @@
 <p>You find additional information on our <a href="https://github.com/cdisc-org/osb-hub/wiki" target="_blank">wiki</a>!</p>
 <p>Provide additional feedback and join discussion in <a href="https://join.slack.com/t/osb-mdr/shared_invite/zt-2iwjqjg76-r0NW6pRH5GnGQQ~~izLc_A" target="_blank">slack</a>!</p>
 <p>The introduction and summary recording is available <a href="https://youtu.be/0VApJgop-Jk" target="_blank">here</a>.</p>
-<h3 id="community-meeting-virtual_16">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_16" title="Permanent link">&para;</a></h3>
+<h3 id="community-meeting-virtual_22">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_22" title="Permanent link">&para;</a></h3>
 <p>(1 July 2024, virtual event)</p>
 <p>We discussed various aspects of the OpenStudyBuilder, about protocol automation and finding available information.</p>
 <h3 id="phuse-sde-heidelberg-germany">PHUSE SDE Heidelberg, Germany<a class="headerlink" href="#phuse-sde-heidelberg-germany" title="Permanent link">&para;</a></h3>
@@ -3697,10 +4158,10 @@
 <p>Discover how Open Study Builder can replace traditional, manual processes with a centralized metadata repository, ensuring consistency and efficiency across various clinical trial activities. Explore the extensive resources available, including a project homepage, documentation, and interactive tools. Learn how to get involved and collaborate on this open-source project.</p>
 <p>The presentation slides are available <a href="../presentations/2024-06-12-OpenStudyBuilder-LeveragingGraph.pdf" target="_blank">here</a>.</p>
 <p>Video recording is available <a href="https://youtu.be/zVobn-lnSLQ" target="_blank">here</a>.</p>
-<h3 id="community-meeting-virtual_17">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_17" title="Permanent link">&para;</a></h3>
+<h3 id="community-meeting-virtual_23">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_23" title="Permanent link">&para;</a></h3>
 <p>(03 June 2024, virtual event)</p>
 <p>We discussed various aspects of the OpenStudyBuilder, about protocol automation and finding available information.</p>
-<h3 id="community-meeting-virtual_18">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_18" title="Permanent link">&para;</a></h3>
+<h3 id="community-meeting-virtual_24">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_24" title="Permanent link">&para;</a></h3>
 <p>(06 May 2024, virtual event)</p>
 <p>We discussed various aspects of the OpenStudyBuilder, about protocol automation and finding available information.</p>
 <h3 id="cdisc-eu-interchange_1">CDISC EU Interchange<a class="headerlink" href="#cdisc-eu-interchange_1" title="Permanent link">&para;</a></h3>
@@ -3739,7 +4200,7 @@
 <p>In this presentation, Nicolas shared information about the status of the CRF design and EDC integration plans promoting the COSA Workshop on OpenStudyBuilder EDC Integrations. You can checkout the slides or watch the full video.</p>
 <p>The presentation slides are available <a href="../presentations/2024-03-26-COSA-Spotlight.pdf" target="_blank">here</a>.</p>
 <p>The recording is available on the CDISC website <a href="https://www.cdisc.org/events/webinar/cdisc-open-source-alliance-quarterly-spotlight-q1" target="_blank">here</a>.</p>
-<h3 id="community-meeting-virtual_19">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_19" title="Permanent link">&para;</a></h3>
+<h3 id="community-meeting-virtual_25">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_25" title="Permanent link">&para;</a></h3>
 <p>(18 March 2024, virtual event)</p>
 <p>We discussed various aspects of the OpenStudyBuilder, about utilization and plans and showing a demonstration.</p>
 <h3 id="osb-as-mdr-collaboration-virtual">OSB as MDR Collaboration (virtual)<a class="headerlink" href="#osb-as-mdr-collaboration-virtual" title="Permanent link">&para;</a></h3>
@@ -3761,11 +4222,11 @@
 <p>In 30 minutes Mikkel and Henrik will reflect on their experience, and insights gained, in developing OpenStudyBuilder. This transformational open-source project is a new approach to working with clinical data standards that will drive end-to-end consistency and more efficient processes for clinical studies. They will focus on how they have applied Domain Driven Design, implemented an API using neomodel, and enabled direct usage of the database as a knowledge graph and licensing aspects.</p>
 <p>The presentation slides are available <a href="../presentations/2024-03-07-Graph-Summit-2024.pdf" target="_blank">here</a>.</p>
 <p>A recording will be available on the GraphSummit <a href="https://neo4j.com/graphsummit/" target="_blank">homepage</a>.</p>
-<h3 id="community-meeting-virtual_20">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_20" title="Permanent link">&para;</a></h3>
+<h3 id="community-meeting-virtual_26">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_26" title="Permanent link">&para;</a></h3>
 <p>(26 February 2024, virtual event)</p>
 <p>We discussed various aspects of the OpenStudyBuilder, about utilization and plans. A main focus point was the CRF and EDC connection, the CRF library and study planned connection and about data structures.</p>
 <p>Introduction slides are available <a href="../presentations/2024-01-29-CommunityMeeting.pdf" target="_blank">here</a>.</p>
-<h3 id="community-meeting-virtual_21">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_21" title="Permanent link">&para;</a></h3>
+<h3 id="community-meeting-virtual_27">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_27" title="Permanent link">&para;</a></h3>
 <p>(29 January 2024, virtual event)</p>
 <p>We discussed various aspects of the OpenStudyBuilder, about utilization and plans.</p>
 <h2 id="2023">2023<a class="headerlink" href="#2023" title="Permanent link">&para;</a></h2>
@@ -3883,7 +4344,7 @@ The paper is available <a href="../presentations/2023-11-06-PHUSE_Paper_SI03.pdf
 <p>(17 October 2023, Falls Church, VA, USA)</p>
 <p>We performed a workshop on Biomedical Concepts. </p>
 <p>The matierial is available <a href="../presentations/2023-10-17-COSA_BC_OSB_Workshop_CDISC_Interchange.pdf" target="_blank">here</a>.</p>
-<h3 id="community-meeting-virtual_22">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_22" title="Permanent link">&para;</a></h3>
+<h3 id="community-meeting-virtual_28">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_28" title="Permanent link">&para;</a></h3>
 <p>(16 October 2023, virtual event)</p>
 <p>In this community meeting we discusses about some needs and questions some members had. It was a more technical documentation, where we checked out how it is possible to see the data structure and it was recommended that the structure could also been displayed by using graph tools which is better exchangable than the current visualization.</p>
 <p>Additionally we had been talking about the licenses. The only requirement to non-open-source-software in this project is the database - Neo4j. If you want to use the OpenStudyBuilder solution in production, a Neo4j enterprise edition is recommended. Additional questions and the need for documentation is available. We take this task up and will write down a guide or information on our projecthomepage hopefully this year.</p>
@@ -3893,7 +4354,7 @@ The paper is available <a href="../presentations/2023-11-06-PHUSE_Paper_SI03.pdf
 <p>(10 October 2023, live event in Copenhagen)</p>
 <p>We showed our OpenStudyBuilder poster, had a live demonstration and talked to many people at the event.</p>
 <p>The poster is available <a href="../presentations/2022-10-13-OpenStudyBuilder-PHUSE-SDE-Poster.pdf" target="_blank">here</a>.</p>
-<h3 id="community-meeting-virtual_23">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_23" title="Permanent link">&para;</a></h3>
+<h3 id="community-meeting-virtual_29">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_29" title="Permanent link">&para;</a></h3>
 <p>(25 September 2023, virtual event)</p>
 <p>We had our community meeting and talkes about the general functionality.</p>
 <h3 id="send-webinar-electronic-nonclinical-protocol-design">SEND Webinar, Electronic Nonclinical Protocol Design<a class="headerlink" href="#send-webinar-electronic-nonclinical-protocol-design" title="Permanent link">&para;</a></h3>
@@ -3921,7 +4382,7 @@ The paper is available <a href="../presentations/2023-11-06-PHUSE_Paper_SI03.pdf
 <p>(15 June 2023, live event in Indre-et-Loire, France)</p>
 <p>There was the French CDISC User Group which meets live in France. Nicolas has presented a "Presentation de OpenStudyBuilder: Metadata Repository (MDR) open source". </p>
 <p>The presentation slides are available <a href="../presentations/2023-06-15-OpenStudyBuilder_GUF.pdf" target="_blank">here</a>.</p>
-<h3 id="community-meeting-virtual_24">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_24" title="Permanent link">&para;</a></h3>
+<h3 id="community-meeting-virtual_30">Community Meeting (virtual)<a class="headerlink" href="#community-meeting-virtual_30" title="Permanent link">&para;</a></h3>
 <p>(8 June 2023, 15:00-16:00 CEST, virtual event)</p>
 <p>We had our community meeting where everyone was invited to dicuss any topic. This time we had quite some questions about the activity concepts (guide on the activity concepts <a href="../guide_activity_concept/">here</a>). Furthermore we discusses how to best get started. You might want to look for the demonstration video showing what is currently implemented <a href="../guide_intro/#demonstration-video">here</a>. We also have a collection of useful resources <a href="../info_resources/">here</a>. The public sandbox environment is available, where you can easily play around with the tool and test data as described <a href="../guide_sandbox/#getting-access">here</a>.</p>
 <p>Join us at the OpenStudyBuilder community meeting! Don't miss out on the opportunity to attend the OpenStudyBuilder community meeting, where we'll demonstrate functionality, provide insightful answers to your questions, and encourage lively discussions on a wide range of subjects.</p>
@@ -4178,28 +4639,43 @@ The poster is available <a href="../presentations/2022-10-13-OpenStudyBuilder-PH
         
       </main>
       
-        <footer class="md-footer">
-  
+
+
+<!-- Footer -->
+<footer class="md-footer">
+  <!-- Further information -->
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
-  
-    <div class="md-copyright__highlight">
-      Copyright &copy; 2025 OpenStudyBuilder Project
-    </div>
-  
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
-  
-</div>
+
+      <!-- Copyright and theme information -->
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2026 OpenStudyBuilder Project
+          </div>
+        
+        
+
+        <!-- Custom footer links -->
+        <p style="margin-top: 0.3rem; color: var(--md-footer-fg-color--lighter);">
+          <a href="https://github.com/NovoNordisk-OpenSource/openstudybuilder-description" target="_blank" rel="noopener" style="color: var(--md-footer-fg-color--lighter); text-decoration: none;">
+            Site Source
+          </a>&nbsp;|&nbsp;
+          <a href="../../privacy_policy/" style="color: var(--md-footer-fg-color--lighter); text-decoration: none;">
+            Privacy Policy
+          </a>&nbsp;|&nbsp;
+          <a href="../../imprint/" style="color: var(--md-footer-fg-color--lighter); text-decoration: none;">
+            Imprint
+          </a>
+        </p>
+      </div>
+
+      <!-- Social links -->
       
     </div>
   </div>
 </footer>
-      
+
     </div>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
